@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head"></h1>
+    <button onclick="displayNum(1)">1</button>
+    <button onclick="displayNum(2)">2</button>
+    <button onclick="displayNum(3)">3</button>
+    <button onclick="displayNum(4)">4</button>
+    <button onclick="displayNum(5)">5</button>
+</body>
+<script>
+    let head = document.querySelector(".head")
+    function displayNum(a) {
+        head.innerHTML += a
+    }
+
+                                                            
+
+    // let num2 = 60;
+    // function checkNum() {
+    //     if(num2 % 2 === 0) {
+    //         return '${num2} is even'
+    //     }else{
+    //         return '${num2} is odd'
+    //     }
+    //     return checkNum;
+    // }
+
+    // let test1 = checkNum;
+    // checkNum()
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    main{
+        display: flex;
+    }
+</style>
+<body>
+    <main>
+        <h2 id="h2">:</h2>
+        <h2 id="hours"></h2>
+        <h2 id="minutes"></h2>
+        <h2 id="seconds"></h2>
+
+
+    </main>
+</body>
+<script>
+
+    let date = Date();
+    let h2 = document.getElementById("h2");
+    let hour = date.getHours();
+    let min = date.getMintues();
+    let sec = date.getSeconds();
+    console.log(date);
+    // let hours = document.getElementById("hours");
+
+    h2.innerText = ` time ; ${hour} : ${min} : ${sec}`;
+
+    
+</script>
+</html>

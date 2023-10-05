@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav {
+    height: 70px;
+    padding: 12px 0;
+    width: 100%;
+    background-color: #1D2226;
+    position: fixed;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 999;
+}
+.cont-div {
+    padding-bottom: 20px;
+}
+
+.big-div {
+    display: flex;
+    margin-top: 5px;
+}
+
+.logo {
+    width: fit-content;
+}
+.sml-scr-sch{
+    display: none;
+    padding-left: 20px;
+}
+.inppp{
+    border: none;
+    margin-top: 5px;
+    /* width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+.input_div {
+    width: fit-content;
+    padding: 0 10px;
+    height: fit-content;
+    background-color: aliceblue;
+}
+
+.inp {
+    width: 300px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+
+.links {
+    text-decoration: none;
+}
+
+.links:hover {
+    color: black !important;
+    text-decoration: underline;
+}
+
+.drop-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.image_div {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.users {
+    position: relative;
+}
+
+.hh {
+    background-color: #fff;
+    position: absolute;
+    top: 110%;
+    width: 300px;
+    right: 0;
+    display: none;
+}
+
+.users:focus-within .hh {
+    display: block;
+}
+@media (max-width  : 1200px) {
+    .input_div{
+        display: none;
+    }
+    .sml-scr-sch{
+        display: block!important;
+    }
+  
+}
+@media (max-width : 1000px) {
+    .work, .try {
+        display: none;
+    }
+}
+@media (max-width : 770px) {
+    .users{
+        display: none;
+    }
+}
+@media (max-width : 560px) {
+    .users{
+        display: none;
+    }
+    .texts{
+        display: none;
+    }
+    .fa-ellipsis{
+        display: block!important;
+    }
+    .dddd{
+        padding-top: 14px;
+        padding-right: 14px;
+    }
+    .big-div {
+        padding-top: 13px;
+    }
+    body{
+        overflow-x: hidden
+    };
+}
+section .out{
+    height: 900px;
+    width: 700px;
+    background-color: white;
+    border-radius: 10px;
+    position: fixed;
+    left: 70px;
+}
+section .in{
+    height: 500px;
+    width: 300px;
+    background-color: #1B1F23;
+    border-radius: 10px 0 0 0;
+    position: fixed;
+    top: 90px;
+}
+section .innn{
+    height: 500px;
+    width: 400px;
+    background-color: #1B1F23;
+    border-radius: 0 10px 0 0;
+    position: absolute;
+    top: 90px;
+    left: 301px;
+}
+.inner{
+    height: 250px;
+    width: 300px;
+    position: absolute;
+    left: 750px;
+    background-image: url(https://media.licdn.com/dms/image/D560CAQHUo-AZc5Nkkg/spinmail-bannerimage-shrink_300_250/0/1646842436854?e=1693954800&v=beta&t=ZvnEYE3hWCReMvfV5c5ekVTz2blJS12VSbsYy9cK-ks);
+    background-repeat: no-repeat;
+    top: 90px;
+    background-size: contain;
+}
+.out .in div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 5px;
+    margin-top: 5px;
+    color: white;
+}
+.out .in div input{
+    width: 290px;
+    height: 40px;
+    position: absolute;
+    top: 51px;
+    border: none;
+    /* background-color: gray; */
+    color: white;
+}
+.out .in .deal{
+    margin-top: 40px;
+    color: red;
+    padding-inline: 30px;
+}
+.out .in .deal h6{
+    cursor: pointer;
+}
+.out .in .deal button{
+    border: none;
+    background-color: #1B1F23;
+    color: white;
+}
+.content{
+    height: 110px;
+    width: 300px;
+    background-color: gray;
+    position: absolute;
+    left: 0px;
+    top: 130px;
+}
+.content img{
+    width: 50px;
+    border-radius: 100%;
+}
+.content div h6{
+    font-size: 14px;
+    position: absolute;
+    left: 65px;
+}
+.content div p{
+    font-size: 14x;
+    position: absolute;
+    top: 25px;
+    left: 250px;
+}
+.parent .content div{
+    display: block;
+}
+.parent .content div{
+    display: flex;
+}
+.deal .parent .content{
+    display: none;
+}
+.deal .parent:focus-within .content{
+    display: block;
+}
+.content2{
+    height: 320px;
+    width: 300px;
+    background-color: #1B1F23;
+    position: absolute;
+    left: 0;
+    top: 150px;
+
+}
+.parent2 .content2 div{
+    position: absolute;
+    top: 200px;
+    display: block;
+    text-align: center;
+}
+.parent2 .content2 div h6{
+    font-size: 13px;
+}
+.parent2 .content2 div button{
+    border-radius: 20px;
+}
+.parent2 .content2 img{
+   width: 180px;
+   position: absolute;
+   top: 50px;
+   left: 70px;
+}
+.deal .parent2 .content2{
+    display: none;
+}
+.deal .parent2:focus-within .content2{
+    display: block;
+}
+.innn .one{
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-between;
+    padding-inline: 10px;
+    color: white;
+    margin-top: 4px;
+    /* padding: 5px; */
+}
+.innn .one div:last-child{
+    display: flex;
+}
+.innn .one div p{
+    font-size: 12px;
+}
+.innn .two{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10px;
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-color: gray;
+    top: 52px;
+    padding-top: 10px;
+    font-size: 13px;
+    color: white;
+}
+.three img{
+    width: 40px;
+    border-radius: 100%;
+}
+.three{
+    display: flex;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 10px;
+    font-size: 13px;
+    color: white;
+}
+.three div:nth-child(2){
+    display: block;
+    padding: 5px;
+}
+.four{
+    position: absolute;
+    top: 175px;
+    left: 40px;
+}
+.four button{
+    border-radius: 20px;
+    padding: 5px;
+}
+.footer{
+    height: 300px;
+    width: 300px;
+    /* background-color: red; */
+    position: absolute;
+    right: -350px;
+    top: 350px;
+}
+.footer div{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.footer div:nth-child(4) p{
+    margin-left: 5px;
+}
+.footer div p:hover{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}

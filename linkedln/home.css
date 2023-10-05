@@ -1,0 +1,478 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.top{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+}
+.head{ display: flex;
+    justify-content: space-between;
+    padding: 22px;
+    width: 100%;
+
+}
+.ff{
+    width: 10%;
+
+}
+.nn{
+    /* background-color: aqua; */
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.link{
+    width: 99px;
+    height: 70px;
+    margin-left: 99px;
+}
+.jj{
+    /* width: 2px; */
+    border: 1px solid black;
+    height: 50%;
+}
+.adv{
+    align-items: center;
+    padding: 5px;
+    width: 50%;
+    /* background-color: blue; */
+    /* background-color: aliceblue; */
+    /* margin-left: 600px; */
+    display: flex;
+    justify-content: space-between;
+
+}
+.art{
+    width: 33px;
+    height: 33px;
+
+
+}
+.ppl{
+    height: 33px;
+    width: 33px;
+
+
+}
+.learn{
+    width: 33px;
+    height: 33px;
+
+}
+#boj{
+    width: 33px;
+    height: 33px;
+
+    
+}
+.com{ 
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    /* margin-left: 50px; */
+    /* background-color: blueviolet; */
+}
+
+.don{
+    margin-bottom: 120px;
+}
+#node{
+    height: 90px;
+    width: 250px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: 22px;
+    text-decoration: none;
+    background-color: transparent;
+}
+.mine{
+    text-decoration: none;
+}
+#but{
+    width: 120px;
+    background-color: transparent;
+    height: 50px;
+    border: 2px solid black ;
+    border-radius: 22px;
+    font-size: 17px;
+}
+.pro{
+    margin-left: 66px;
+    height: 666px;
+    display: flex;
+    
+}
+.rop{ width: 555px;
+
+}
+h1{
+    font-weight: lighter;
+
+    margin-right: 30px;
+}
+.pos{
+    height: 33px;
+    width: 333px;
+}
+.sop{
+   height: 33px;
+   width: 333px; 
+}
+.cum{
+    color: blue;
+}
+.mac{
+    height: 33px;
+    width: 333px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+.cap{
+    width: 555px;
+    margin-left: 222px;
+    margin-top: 22px;
+}
+.bus{
+    height: 33px;
+    width: 333px;
+    border-radius: 22px;
+    border:none ;
+}
+.men{ height: 44px;
+    width: 333px;
+    border-radius: 22px;
+}
+.sen{
+    height: 500px;
+    display: flex;
+    background-color:whitesmoke;
+}
+.pot{
+    margin-left: 33px;
+    margin-top: 99px;
+    height: 444px;
+    width: 999px;
+}
+#rush{
+    margin-top: 100px;
+    margin-left: 500px;
+    /* display: flex; */
+    height: 555px;
+    width: 477px;
+    position: absolute;
+    right: 150px;
+}
+.mans{width: 555px;
+ 
+}
+.run{
+    height: 44px;
+    width: 88px;
+    border-radius: 22px;
+    margin-left: 5px;
+    background-color: none;
+    /* margin-bottom: 300px; */
+}
+.rub{
+    height: 44px;
+    width:177px;
+    border-radius: 22px;
+    margin-bottom: -444px;
+    margin-left: 5px;
+    background-color: none;
+}
+.law{
+    height: 44px;
+    width: 202px;
+    border-radius: 22px;
+    background-color: none;
+}
+.buy{
+    margin-right: 10px;
+}
+.mark{
+    display: flex;
+}
+.care{
+    height: 44px;
+    width: 88px;
+    margin-left: 15px;
+    border-radius: 22px;
+}
+.eng{
+    height: 44px;
+    width: 99px;
+    border-radius: 22px;
+}
+.oja{
+    height: 44px;
+    width: 155px;
+    border-radius: 22px;
+    margin-right: 10px;
+}
+/* .lite{
+
+} */
+.tile{
+    height: 44px;
+    width: 155px;
+    border-radius: 22px;
+}
+.send{
+    height: 44px;
+    width: 111px;
+    border-radius: 22px;
+}
+.admin{
+    height: 44px;
+    width: 177px;
+    border-radius: 22px;
+}
+.show{
+    height: 44px;
+    width: 77px;
+    border-radius: 22px;
+}
+.sag{
+    height: 500px;
+    display: flex;
+
+}
+.gas{ margin-left: 100px;
+    margin-top: 55px;
+
+}
+.bat{
+    margin-top: 55px;
+    margin-left: 77px;
+}
+.pan{
+    height: 44px;
+    width: 99px;
+    border-radius: 22px;
+    background: none;
+}
+.nap{
+    height: 44px;
+    width: 177px;
+    border-radius:22px;
+    background: none;
+}
+.fin{
+    height: 44px;
+    width: 77px;
+    border-radius: 22px;
+    background: none ;
+}
+.ads{
+    height: 44px;
+    width: 177px;
+    border-radius: 22px;
+    background: none;
+}
+.red{
+    height: 44px;
+    width: 122px;
+    border-radius: 22px;
+    background: none;
+}
+.tom{
+    height: 44px;
+    width: 144px;
+     border-radius: 22px;
+     background: none;
+}
+.bot{
+    height: 44px;
+    width: 88px;
+    border-radius: 22px;
+    background: none;
+}
+.tech{
+    height: 44px;
+    width: 177px;
+    border-radius: 22px;
+    background: none;
+}
+.shop{
+    height: 44px;
+    width: 88px;
+    border-radius: 22px;
+    background: none;
+}
+.bill{
+    height: 44px;
+    width: 155px;
+    border-radius: 22px;
+    background: none;
+}
+.more{
+    height: 44px;
+    width: 88px;
+    border-radius: 22px;
+    background: none;
+}
+.gg{
+    background-color: #333;
+    border-radius: 50%  ;
+}
+.sup{
+    height: 444px;
+    background-color: lavenderblush ;
+display: flex;
+}
+.pus{
+    padding-top: 40px;
+    margin-left: 66px;
+}
+.easy{
+    color: brown;
+    margin-top: 100px;
+}
+.yeast{
+    padding-top: 177px;
+    margin-left: 177px;
+}
+.stop{
+    height: 44px;
+    width: 99px;
+    border-radius: 22px;
+    background: none;
+}
+.treat{
+    background-color: whitesmoke;
+height: 100%;
+width: 100%;}
+.containb{
+    padding-left: 0rem;
+    /* background-color: blueviolet; */
+
+    
+}
+.redz{
+    font-size: 55px;
+    font-weight: lighter;
+    color: burlywood;
+    margin-top: 100px; 
+}
+.gin{
+    font-size: 33px;
+    font-weight: lighter;
+}
+.blues{ width: 40%;
+    height: 100%;
+    padding: 4rem 0rem 5rem 1rem;
+    display: flex;
+    /* background-color: blue; */
+    justify-content: center;
+    align-items: center;
+}
+.blues img{
+    width: 100%;
+    height: 100%;
+}
+.containc{
+    padding-left: 0rem;
+    align-items: center;
+    width: 777px;
+    height: 555px;
+    /* background-color: blueviolet; */
+}
+.pink{
+    font-size: 44px;
+    padding-right: 22px;
+    font-weight: lighter;
+    color: burlywood;
+    margin-top: 100px;
+}
+.grins{ font-size: 33px;
+    font-weight: lighter;
+}
+.six{ width: 55%;
+    height: 100%;
+    padding: 3rem 9rem 3rem 5rem;
+   /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.six img{
+    width: 100%;
+    height: 100%;
+}
+.containd{
+    padding-left: 0rem;
+    /* background-color: lime; */
+    width: 599px;
+    height: 555px;
+}
+.sink{
+    font-size: 44px;
+    padding-right: 22px;
+    font-weight: lighter;
+    color: burlywood;
+    margin-top: 100px;
+}
+.zinc{
+    font-size: 35px;
+    font-weight: lighter;
+}
+.sex{
+    width: 40%;
+    height: 100%;
+    padding: 5rem 0rem 0rem 0rem;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sex img{
+    height: 100%;
+    width: 100%;
+}
+.love{
+    background-color: white;
+    display: flex;
+    height: 666px;
+}
+.fave{
+    margin-left: 11px;
+    margin-top: 77px;
+    /* background-color:royalblue; */
+    height: 650px;
+    width: 444px;
+}
+.fare{
+    height: 266px;
+    width: 377px;
+}
+.feed{
+    font-weight: lighter;
+    font-size: 44px;
+}
+#fear{
+    height: 60px;
+    width: 199px;
+    border-radius: 33px;
+}
+.fia{
+    margin-left: 77px;
+    margin-top: 99px;
+    /* background-color: deeppink; */
+    height: 650px;
+    width: 444px;
+}
+#tear{
+    height: 266px;
+    width: 377px;
+}
+.mide{ font-size: 44px;
+    font-weight: lighter;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //connditional statement in js
+        //if-else statments
+        // let test =77;
+
+        // if(test % 5 ===0){
+        //     console.log('${test} is an even number');
+        // }else if(test % 5 ===0){
+        //     console.log.('{test} is divisible by 5')
+        // }esle{
+        //     ('${test} is neither divisible by 2 nor 5')
+        // }
+        // {'${test} is an odd number'}
+        // else if('${test} is neither divisible by 2 nor 5')
+
+        //Switch case statments in js
+        // let day = prompt("Enter your day of the week");
+        // switch (Number (day)) {
+        //     case 1:
+        //         alert("The day is Sunday");
+        //         break;
+        //     case 2:
+        //         alert("The day is Monday");
+        //         break;
+        //     case 3:
+        //         alert("The day is Tuesday");
+        //         break;
+        //     case 4:
+        //         alert("The day is Wednesday");
+        //         break;
+        //     case 5:
+        //         alert("The day is Thurday");
+        //         break;
+        //     case 6:
+        //         alert("The day is Friday");
+        //         break;
+        //     case 7:
+        //         alert("The day is Saturday");
+        //         break;
+        //     default:
+        //         alert("Invaild")
+        //         break;
+        // }
+
+        //Function mainly used for reuseability
+        //method in fuction
+        //1. Function Statment 2/ Anonymos fuction
+
+            // function multiplyNum1 (){
+
+            // }
+            // const multiplyNum2 = function(){
+
+            // }
+
+
+
+            let day = prompt("Enter your day of the week");
+
+            function checkDay(value){
+            switch (Number (value)) {
+                case 1:
+                    alert("The day is Sunday");
+                    break;
+                case 2:
+                    alert("The day is Monday");
+                    break;
+                case 3:
+                    alert("The day is Tuesday");
+                    break;
+                case 4:
+                    alert("The day is Wednesday");
+                    break;
+                case 5:
+                    alert("The day is Thurday");
+                    break;
+                case 6: 
+                    alert("The day is Friday");
+                    break;
+                case 7:
+                    alert("The day is Saturday");
+                    break;
+                default:
+                    alert("Invaild")
+                    break;
+            }
+            }
+            
+            checkDay(day) //This mean you have trigger the function
+
+            let day2 = prompt("Enter another day of the week: ")
+            checkDay(day2)
+        
+
+            
+    </script>
+</html>

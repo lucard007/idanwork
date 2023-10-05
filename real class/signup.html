@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    main{
+        height: 500px;
+        width: 500px;
+        background-color: red;
+        text-align: center;
+        margin: auto;
+        border-radius: 10px;
+    }
+    main div input{
+        margin: 10px;
+        height: 40px;
+        width: 200px;
+    }
+    #show{
+        height: 150px;
+        width: 100%;
+        background-color: wheat;
+        margin-top: 20px;
+    }
+</style>
+<body>
+    <main>
+        <div>
+            <h1>Sign up</h1>
+            <p>Its quick and easy</p>
+        </div>
+        <div>
+            <input type="text" id="input1" placeholder="Firstname" required>
+            <input type="text" id="input2" placeholder="Surname" required>
+            <input type="number" id="input3" placeholder="Mobile Phone" required>
+            <input type="text" id="input4" placeholder="Email" required>
+            <input type="password" id="input5" placeholder="Password" value="" required>
+            <input type="password" id="input6" placeholder="Comfirm-password" value=""> <br> <br>
+            <input type="checkbox" onclick="Toggle()">
+        </div>
+        <div><button onclick="signUp(event)">SIGN UP!!!</button required></div>
+        <div id="show"></div>
+    </main>
+</body>
+<script>
+
+    let infoArr = [];
+    let inputone = document.getElementById("input1");
+    let inputtwo = document.getElementById("input2");
+    let inputthree = document.getElementById("input3");
+    let inputfour = document.getElementById("input4");
+    let inputfive = document.getElementById("input5");
+    let inputsix = document.getElementById("input6");
+
+    // let show = document.getElementById("show")
+    if (localStorage.getItem("infoArr") === null) {
+        localStorage.setItem("infoArr", "[]")
+    }
+
+    function signUp(ev) {
+        // ev.preventDefaul();
+        let firstname = inputone.value;
+        let surname = inputtwo.value;
+        let phonenumber = Number(inputthree.value);
+        let email = inputfour.value;
+        let password = inputfive.value;
+        let confirmpass = inputsix.value
+        let infoObj = {
+            firstname,
+            surname,
+            phonenumber,
+            email,
+            password,
+            confirmpass
+        }
+        let storedArray = localStorage.getItem("infoArr");
+        let parsedArr = JSON.parse(storedArray);
+        let infoArr2 = [...parsedArr, infoObj];
+        localStorage.setItem("infoArr", JSON.stringify(infoArr2));
+
+        if (firstname == "" || surname == "" || phonenumber == "" || email == "" || password == "" || confirmpass == "" ) {
+            alert("input field cannot be empty")
+        }else if(password.length < 8) {
+            alert("password must be  at least 8 character")
+        }else if (password != confirmpass) {
+            alert("password does not match")
+            window.location.href = "signup.html";
+        }else{
+            alert("login succesfull")
+            window.location.href = "aklogin.html";
+
+        }
+
+
+
+        // if (confirmpass != password){
+        //     alert("not matched")
+        //      window.location.href = "signup.html";
+
+        // }
+
+        // if (confirmpass === password) {
+        //     alert("matched password")
+        //      window.location.href = "aklogin.html";
+        // }
+
+    }
+
+
+    function Toggle() {
+        let xx = document.getElementById("input5");
+        if (xx.type === "password") {
+            xx.type = "text"
+        } else {
+            xx.type = "password"
+        }
+
+        let xx1 = document.getElementById("input6");
+        if (xx1.type === "password") {
+            xx1.type = "text"
+        } else{
+            xx1.type = "password"
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="lucard()">click me!!!</button>
+    <div id="x1"></div>
+    <div id="x2"></div>
+    <div id="x3"></div>
+    <div id="x4"></div>
+    <div id="x5"></div>
+    <div id="x6"></div>
+    <h1></h1>
+</body>
+    <script>
+        let x1 = document.getElementById("x1")
+        let x2 = document.getElementById("x2")
+        let x3 = document.getElementById("x3")
+        let x4 = document.getElementById("x4")
+        let x5 = document.getElementById("x5")
+        let x6 = document.getElementById("x6")
+
+        function lucard() {
+            let test = prompt("press");
+            x1.innerHTML = `the string you enter is ${test}`
+            const length = test.length
+
+            let aa = `the length of the string is ${length}`
+            x2.innerHTML = aa
+
+            const be = test.toLowerCase()
+            x3.innerHTML = be
+
+            const se = test.toUpperCase()
+            x4.innerHTML = se
+
+            if(test.toLowerCase().includes("javascript")) {
+                x5.innerHTML = `the string you entered contain "javascript"`
+            }else{
+                x6.innerHTML = `the string you entered does not contain "javascript"`
+            }
+
+            let index = test.indexof('a')
+            x6.innerHTML = `the index of 'a' in the string is ${test}`;
+        }
+    </script>
+</html>

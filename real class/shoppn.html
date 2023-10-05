@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Shopping list</h1>
+    <input type="text" id="item">
+    <input type="text" id="quatity">
+    <input type="text" id="price">
+    <button onclick="addtolist()">Submit Now!!!</button>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <th>s/n</th>
+                <th>item</th>
+                <th>quatity</th>
+                <th>price</th>
+                <th>action</th>
+            </tr>
+        </thead>
+        <tbody id="display"></tbody>
+    </table>
+</body>
+<script>
+    let list = [ ]
+    let quality = document.getElementById("quatity");
+    let item = document.getElementById("item");
+    let price = document.getElementById("price");
+    function addtolist(){
+        let data = {
+        item: item.value,
+        quatity: quatity.value,
+        price: price.value,
+        }
+
+    list.push(data)
+    console.log(list);
+
+    display.innerHTML = " "
+    for (let index = 0; index < list.length; index++) {
+        const element = list[index];
+        display.innerHTML += `
+        <tr>
+            <td>${index}</td>
+            <td>${element.item}</td>
+            <td>${element.quatity}</td>
+            <td>${element.price}</td>
+            <td>
+                <button>edit</button>
+                <button>del</button>
+            </td>
+
+
+
+        </tr>`
+    }
+    }
+</script>
+</html>

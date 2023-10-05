@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // loops in JS
+
+
+    // for loop
+    let arrNum = [1,2,3,4,5,6,7,8,9,0]
+    for (let i = 0; i < arrNum.length; i++) {
+        let num = arrNum[i];
+        console.log(num * 6);
+    }
+
+    const detail = {
+        age: 222,
+        name: "Adeyemi",
+        meal: "beans",
+        drink: "fanta",
+        color: "red"
+    }
+
+    for(key in detail) {
+        let values = detail[key];
+        console.log(values);
+    }
+
+
+    // while loop
+    let i = 0;
+    while(i < 10) {
+        console.log(i);
+        i++;
+    }
+
+    // do/while loop
+    let ade = 0;
+    do{
+        console.log(ade);
+        ade++
+    }while (false)
+</script>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cal.js">
+    <title>Document</title>
+</head>
+<style>
+    main{
+        height: 530px;
+        width: 400px;
+        background-color: red;
+        border-radius: 10px;
+        margin: auto;
+    }
+    main h2{
+        padding: 5px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    #result{
+        height: 50px;
+        width: 400px;
+        background-color: blanchedalmond;
+        position: absolute;
+        top: 50px;
+        /* border-radius: 10px; */
+    }
+    #show{
+        height: 50px;
+        width: 400px;
+        background-color: green;
+        position: absolute;
+        top: 110px;
+        color: aliceblue ;
+    }
+.info{
+    height: 350px;
+    width: 400px;
+    background-color: aqua;
+    position: absolute;
+    top: 180px;
+}
+.info button{
+    height: 50px;
+    width: 80px;
+    background-color: black;
+    color: white;
+    margin: 8px;
+    cursor: pointer;
+}
+
+</style>
+<body>
+    <main>
+        <h2>Calculator</h2>
+        <div>
+            <div id="show"></div>
+            <!-- <div id="result"></div> -->
+        </div>
+        <div class="info">
+            <button onclick="">AC</button>
+            <button onclick="">DE</button>
+            <button onclick="displayNum()">%</button>
+            <button onclick="display('00')">00</button>
+            <button onclick="display(7)">7</button>
+            <button onclick="display(8)">8</button>
+            <button onclick="display(9)">9</button>
+            <button onclick="display()">\</button>
+            <button onclick="display(4)">4</button>
+            <button onclick="display(5)">5</button>
+            <button onclick="display(6)">6</button>
+            <button onclick="display('*')">*</button>
+            <button onclick="display(1)">1</button>
+            <button onclick="display(2)">2</button>
+            <button onclick="display(3)">3</button>
+            <button onclick="display('-')">-</button>
+            <button onclick="display(0)">0</button>
+            <button onclick="displayNum('.')">.</button>
+            <button onclick="displayNum('=')">=</button>
+            <button onclick="displayNum('+')">+</button>
+        </div>
+    </main>
+</body>
+<script>
+
+    let show = document.getElementById("show")
+    function display(a) {
+        show.innerHTML += a
+    }
+    
+    // let show = document.getElementById("show")
+    // let uu = document.getElementById("result")
+    // let operator = '';
+    // let result = '';
+    // const display = (a) => {
+    //     show.innerHtml += a
+    // }
+    // function operators (a) {
+    //     show.innerHTML += '' + a + '';
+    //     operator = a
+    // }
+
+// let box = displayNum('value');
+
+
+// function displayNum(value){
+// switch (displayNum (value)) {
+//     case 1:
+//         displayNum("value += ");
+//         break;
+//     case 2:
+//         displayNum("The day is Monday");
+//         break;
+//     case 3:
+//         displayNum("The day is Tuesday");
+//         break;
+//     case 4:
+//         displayNum("The day is Wednesday");
+//         break;
+//     case 5:
+//         displayNum("The day is Thurday");
+//         break;
+//     case 6: 
+//         displayNum("The day is Friday");
+//         break;
+//     case 7:
+//         displayNum("The day is Saturday");
+//         break;
+//     default:
+//         displayNum("Invaild")
+//         break;
+// }
+// }
+
+</script>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    // Array method in js
+    let test = [1,2,3,4,,6,7,8,9,0];
+    console.log(test.length)  // gives the number of items in arr (counting from 1)
+
+    console.log(test.toString());  // convert arr to a string
+
+    console.log(test.join("|")); // almost like toString
+
+    const test2 = ["manu","chealsea","real","napoli","mancity","asernal"];
+    test2.pop();
+    console.log(test2); // to remove last/end item from arr
+
+    test2.push("leeds");
+    console.log(test2); // to add item to last/end from arr
+
+    test2.shift();
+    console.log(test2); // remove first item from your arr
+
+    test2.unshift("3SC");
+    console.log(test2); // to add item to the first item
+
+    test2[3] = "Shooting star";
+    console.log(test2);
+
+    const test3 = [1, 2, 3, 4, 5];
+    const test4 = [6, 7 , 8, 9, 0];
+    console.log(test3.concat(test4));  // merging of arrays together
+
+    const test6 = ["bannas", "lemon", "sweet", "grape"];
+    test6.slice(1, 2, "mango", "pinapple");
+    console.log(test6);  
+
+    test6.splice(3, 1);
+    console.log(test6);  // removing n deletin of an item and adding new argument // first position-first argument second position for second argument
+
+    const test7 = ["green", "blue", "white", "yellow", "red", "violent"];
+    const test9 = test7.slice(1, 4);
+    console.log(test9);
+
+    const test10 = [2, 3, 4, 5, 6];
+    const test11 = [7, 8, 9, 10, 11];
+    const test12 = [...test11, ...test10];
+    console.log(test12);
+
+
+    const test13 = ["green", "blue", "white", "yellow", "red", "violent"];
+    let [color1, color2, color3, color4] = test13;
+    console.log(color4);
+
+    const person1 = {name:"Adeyemi", age:20, color:"blue", food:"beans"};
+    const {name, age, food} = person1;
+    console.log(person1);
+</script>
+</html>

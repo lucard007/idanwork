@@ -1,0 +1,333 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav {
+    height: 70px;
+    padding: 12px 0;
+    width: 100%;
+    background-color: red;
+    position: fixed;
+    z-index: 999;
+    background-color: #1D2226;
+}
+.cont-div {
+    padding-bottom: 20px;
+}
+
+.big-div {
+    display: flex;
+    margin-top: 5px;
+}
+
+.logo {
+    width: fit-content;
+}
+.sml-scr-sch{
+    display: none;
+    padding-left: 20px;
+}
+.inppp{
+    border: none;
+    margin-top: 5px;
+    /* width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+.input_div {
+    width: fit-content;
+    padding: 0 10px;
+    height: fit-content;
+    background-color: aliceblue;
+}
+
+.inp {
+    width: 300px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+
+.links {
+    text-decoration: none;
+}
+
+.links:hover {
+    color: black !important;
+    text-decoration: underline;
+}
+
+.drop-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.image_div {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.users {
+    position: relative;
+}
+
+.hh {
+    background-color: #fff;
+    position: absolute;
+    top: 110%;
+    width: 300px;
+    right: 0;
+    display: none;
+}
+.users:focus-within .hh {
+    display: block;
+}
+@media (max-width  : 1200px) {
+    .input_div{
+        display: none;
+    }
+    .sml-scr-sch{
+        display: block!important;
+    }
+}
+@media (max-width : 1000px) {
+    .work, .try {
+        display: none;
+    }
+}
+@media (max-width : 770px) {
+    .users{
+        display: none;
+    }
+}
+@media (max-width : 560px) {
+    .users{
+        display: none;
+    }
+    .texts{
+        display: none;
+    }
+    .fa-ellipsis{
+        display: block!important;
+    }
+    .dddd{
+        padding-top: 14px;
+        padding-right: 14px;
+    }
+    .big-div {
+        padding-top: 13px;
+    }
+    body{
+        overflow-x: hidden
+    };
+}
+.one{
+    position: fixed;
+    height: 350px;
+    width: 240px;
+    top: 75px;
+    left: 60px;
+    background-color: #1B1F23;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.one .cover img:first-child{
+    position: absolute;
+    width: 240px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 2px 1px 3px black;
+}
+.one .cover img:last-child{
+    position: absolute;
+    width: 70px;
+    left: 80px;
+    top: 25px;
+    border-radius: 100%;
+}
+.one div:nth-child(2){
+    text-align: center;
+    top: 100px;
+    left: 45px;
+    position: absolute;
+    color: #fff;
+    font-size: 13px;
+}
+.one div:nth-child(3) div{
+    display: flex;
+    width: 210px;
+    justify-content: space-between;
+    top: 160px;
+    left: 10px;
+    position: absolute;
+    color: #fff;
+    text-align: start;
+}
+.one div:nth-child(3) div:hover{
+    background-color: gray;
+    width: 240px;
+    left: 0;
+}
+.one div:nth-child(4){
+    position: absolute;
+    top: 210px;
+    left: 10px;
+    color: #fff;
+    font-size: 13px;
+}
+.one div:nth-child(5){
+    position: absolute;
+    top: 310px;
+    left: 10px;
+    color: #fff;
+    font-size: 13px;
+}
+.one div:nth-child(5):hover{
+    background-color: gray;
+    width: 240px;
+    height: 40px;
+    left: 0;
+}
+.one div a{
+    text-decoration: none;
+}
+.two{
+    height: 140px;
+    width: 240px;
+    background-color: #1B1F23;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    position: fixed;
+    top: 430px;
+    left: 60px;
+    padding: 10px;
+    cursor: pointer;
+}
+.two a{
+    display: block;
+    padding: 3px;
+}
+.two button{
+    position: absolute;
+    width: 240px;
+    left: 0;
+}
+
+.three{
+    height: 130px;
+    width: 600px;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 75px;
+    left: 320px;
+    padding: 15px;
+}
+.three div img{
+    width: 45px;
+    border-radius: 100%;
+}
+.three div input{
+    height: 45px;
+    width: 450px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+.three div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-inline: 10px;
+}
+.three .aa{
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-between;
+    padding-inline: 60px;
+    margin-top: 20px;
+}
+.four{
+    height: 350px;
+    width: 300px;
+    position: fixed;
+    top: 75px;
+    left: 940px;
+    background-color: hotpink;
+    border-radius: 10px;
+}
+.four div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    margin-top: 5px;
+    font-size: 10px;
+}
+.four div img{
+    width: 50px;
+    border-radius: 100%;
+}
+.four div div{
+    display: block;
+}
+.four div button{
+    border-radius: 20px;
+}
+.five{
+    height: 150px;
+    width: 300px;
+    position: fixed;
+    top: 430px;
+    left: 940px;
+    background-color: aqua;
+    background-image: url(https://media.licdn.com/dms/image/D560CAQHUo-AZc5Nkkg/spinmail-bannerimage-shrink_300_250/0/1646842436854?e=1693954800&v=beta&t=ZvnEYE3hWCReMvfV5c5ekVTz2blJS12VSbsYy9cK-ks);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.six{
+    height: 1530px;
+    width: 600px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    padding: 15px;
+}
+.six div img{
+    width: 50px;
+}
+.six div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10px;
+}
+.six div:nth-child(2){
+    display: block;
+}
+.six .omo{
+    display: flex;
+    position: absolute;
+    left: -125px;
+    padding-inline: 160px;
+}
+.six .poor{
+    background-image: url(owo.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    width: 600px;
+    top: 80px;
+    left: 125px;
+    position: absolute;
+
+}

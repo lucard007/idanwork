@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        /* background-image: url(../treepmmm.jpg);
+        background-size: cover;
+        background-repeat: no-repeat; */
+    }
+    body{
+        background-image: url(../school.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .omo{
+        display: block;
+        height: 400px;
+        width: 350px;
+        background-color: wheat;
+        box-shadow: 10px 5px ;
+        border-radius: 10px;
+        text-align: center;
+        color: red;
+        margin: 100px 0 0 450px;
+    }
+    h2{
+        color: hotpink;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .omo .lol{
+        margin-top: 50px;
+        
+    }
+    .lol button{
+        height: 30px;
+        width: 100px;
+        border-radius: 5px;
+        color: whitesmoke;
+        background-color: red;
+    }
+    .lol input{
+        height: 30px;
+        width: 150px;
+        border-radius: 5px;
+    }
+    .yy{
+        margin-top: 30px;
+        height: 50px;
+        width: 100px;
+        background-color: tomato;
+        border-radius: 10px;
+        color: white;
+        font-family: cursive;
+        margin-left: 120px;
+    }
+</style>
+<body>
+    <div class="omo">
+        <h2>GRADING SCORE CHECKER</h2>
+       <div class="lol">
+        <input type="text" placeholder=" Insert your score" class="xx">
+        <button onclick="display()">Check Now</button>
+       </div>
+        <div class="yy"></div>
+    </div>
+</body>
+<script>
+        let xx = document.querySelector(".xx");
+        let yy = document.querySelector(".yy");
+        function display(){
+        let text = xx.value
+        if(text >=70) {
+            yy.innerHTML="A--Distinction"
+        }
+        else if(text <=69) {
+            yy.innerHTML="B--Very Good"
+        }
+        if(text <=59) {
+            yy.innerHTML="C--Good"
+        }
+        if(text <=49) {
+            yy.innerHTML="D--Poor"
+        }
+        if(text <=39) {
+            yy.innerHTML="E--Fail"
+        }
+        if(text >=101) {
+            yy.innerHTML="Invalid"
+        }
+        if(text <=-1) {
+            yy.innerHTML="Invalid--"
+        }
+    }
+</script>
+</html>

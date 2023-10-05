@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* main{
+    position: relative;
+    background-color: gray;
+    height: 3000px;
+} */
+nav {
+    height: 70px;
+    padding: 12px 0;
+    width: 100%;
+    position: fixed;
+    /* position: -webkit-sticky;
+    top: 0; */
+    z-index: 999;
+    background-color: #1D2226;
+}
+.cont-div {
+    padding-bottom: 20px;
+}
+
+.big-div {
+    display: flex;
+    margin-top: 5px;
+}
+
+.logo {
+    width: fit-content;
+}
+.sml-scr-sch{
+    display: none;
+    padding-left: 20px;
+}
+.inppp{
+    border: none;
+    margin-top: 5px;
+    /* width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+.input_div {
+    width: fit-content;
+    padding: 0 10px;
+    height: fit-content;
+    background-color: aliceblue;
+}
+
+.inp {
+    width: 300px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+/* .up{
+    background-color: #1D2226;
+    color: white;
+} */
+.links {
+    text-decoration: none;
+}
+
+.links:hover {
+    color: black !important;
+    text-decoration: underline;
+}
+
+.drop-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.image_div {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.users {
+    position: relative;
+}
+.hh {
+    background-color: #fff;
+    position: absolute;
+    top: 110%;
+    width: 300px;
+    right: 0;
+    display: none;
+}
+.users:focus-within .hh {
+    display: block;
+}
+@media (max-width  : 1200px) {
+    .input_div{
+        display: none;
+    }
+    .sml-scr-sch{
+        display: block!important;
+    }
+}
+@media (max-width : 1000px) {
+    .work, .try {
+        display: none;
+    }
+}
+@media (max-width : 770px) {
+    .users{
+        display: none;
+    }
+}
+@media (max-width : 560px) {
+    .users{
+        display: none;
+    }
+    .texts{
+        display: none;
+    }
+    .fa-ellipsis{
+        display: block!important;
+    }
+    .dddd{
+        padding-top: 14px;
+        padding-right: 14px;
+    }
+    .big-div {
+        padding-top: 13px;
+    }
+    body{
+        overflow-x: hidden
+    };
+}
+.one{
+    height: 100px;
+    width: 230px;
+    background-color: #1D2226;
+    color: white;
+    border-radius: 10px;
+    position: fixed;
+    top: 100px;
+    left: 70px;
+    padding: 10px;
+}
+.one a{
+    text-decoration: none;
+}
+.one a:hover{
+    text-decoration: underline;
+}
+.two{
+    height: 70px;
+    width: 550px;
+    background-color: #1D2226;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 100px;
+    left: 380px;
+    padding: 15px;
+}
+.two button{
+    border-radius: 20px;
+}
+.three{
+    height: 900px;
+    width: 550px;
+    background-color: #1D2226;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 175px;
+    left: 380px;
+    padding: 15px;
+}
+.three div img{
+    width: 50px;
+}
+.three div div:first-child{
+    display: flex;
+    align-items: center;
+}
+.three .oo{
+    margin-left: 10px;
+}
+.three .mom{
+    display: block;
+}
+.three button{
+    border-radius: 15px;
+}
+.three .omo{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10px;
+}
+.four{
+    height: 285px;
+    width: 280px;
+    background-color: #1D2226;
+    border-radius: 10px;
+    position: fixed;
+    top: 100px;
+    left: 950px;
+    padding: 15px;
+    color: white;
+}
+.four .ad{
+    text-align: end;
+}
+.four div img{
+    width: 70px;
+    margin-left: 30px;
+}
+.four div img:first-child{
+    border-radius: 100%;
+}
+.four .luk{
+    margin-left: 10px;
+}
+.four button{
+    border-radius: 15px;
+    margin-left: 60px;
+}
+.footer{
+    height: 285px;
+    width: 280px;
+    /* background-color: red; */
+    position: fixed;
+    top: 390px;
+    left: 950px;
+    border-radius: 10px;
+}
+.footer div{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.footer div:nth-child(4) p{
+    margin-left: 5px;
+}
+.footer div p:hover{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}

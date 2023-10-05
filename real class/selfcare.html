@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let school = "oici";
+    localStorage.setItem("your school name" , school);
+    let x = localStorage.getItem("your school name");
+    console.log(x);
+
+    let arr1 = ["luk", "omo", "lol"]; 
+    let stringArr1 = JSON.stringify(arr1);
+    console.log(arr1);
+    console.log(stringArr1);
+
+    let fakeArr1 = '["omo", "yoy", "wew"]';
+    let parse = JSON.parse(fakeArr1);
+    console.log(parse);
+
+    localStorage.setItem("keyss", stringArr1)
+    x1 = localStorage.getItem(stringArr1);
+    console.log(x1);
+
+    let arr3 = ["panda", "yoyo", "qoq", "wow"];
+    stringarr3 = JSON.stringify(arr3);
+    localStorage.setItem("panda info", stringarr3);
+    let x3 = localStorage.getItem(stringarr3);
+</script>
+</html>

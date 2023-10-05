@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mynetwork.css">
+    <script src="https://kit.fontawesome.com/ad4cbc9f00.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="max-w-100">
+        <div class="container d-flex align-items-center justify-content-between cont-div">
+            <!-- logo section -->
+            <div class="big-div ">
+                <p class="logo"> <i class="fa-brands fa-linkedin text-primary fs-1"></i></p>
+                <!-- <div class="border input_div mt-1 rounded-2 mx-2">
+                    <i class="fa-solid fa-magnifying-glass text-secondary"></i>
+                    <input class="inp" type="Search" placeholder="Search">
+                </div> -->
+                <div class="inppp">
+                    <!-- <i class="fa-solid fa-magnifying-glass text-secondary"></i> -->
+                    <input type="text" placeholder="Search" required>
+                </div>
+                <i class="fa-solid sml-scr-sch d-none py-2  fa-magnifying-glass text-secondary fs-4"></i>
+            </div>
+
+            <!-- icons -->
+
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="home text-center px-3 text-dark">
+                    <a class="text-secondary links" href=""><i class="nav-icons fa-solid fa-house-chimney"></i>
+                        <h6 class="texts">Home</h6>
+                    </a>
+                </div>
+                <div class="network text-center px-3 text-dark">
+                    <a class="text-secondary links" href="mynetwork.html"><i class="fa-solid fa-user-group"></i>
+                        <h6 class="texts">My Network</h6>
+                    </a>
+                    <div class="mm">
+                        <div class="in">
+
+                        </div>
+                        <div class="be">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="job text-center px-3 text-dark">
+                    <a class="text-secondary links" href="jobs.html"><i class="nav-icons fa-solid fa-briefcase"></i>
+                        <h6 class="texts">Jobs</h6>
+                    </a>
+                </div>
+                <div class="message  text-center px-3 text-dark">
+                    <a class="text-secondary links" href="message.html"><i
+                            class="nav-icons fa-solid fa-message"></i></i>
+                        <h6 class="texts">Messaging</h6>
+                    </a>
+                </div>
+                <div class="notify text-center px-3 text-dark">
+                    <a class="text-secondary links" href="./notification.html"><i
+                            class="nav-icons fa-solid fa-bell"></i>
+                        <h6 class="texts">Notications</h6>
+                    </a>
+                </div>
+                <div class="dddd">
+                    <p class=""><i class="fa-solid fa-ellipsis p-1 d-none border more rounded-circle"></i></p>
+                </div>
+                <div class="users">
+                    <button class="image_div px-3">
+                        <img class="drop-image img-fluid" src="mainpix.png" alt=""></i>
+                        <h6 id="me">Me <span><i class="nav-icons fa-solid fa-caret-down"></i></span></h6>
+                    </button>
+                    <div class="hh shadow p-3">
+                        <div class="ip d-flex">
+                            <img class="drop-image mx-3" src="mainpix.png" alt="">
+                            <div class="ll">
+                                <h5>Adeyemi Lukman</h5>
+                                <h6>Builder at Aron Nigeria Ltd</h6>
+                            </div>
+                        </div>
+                        <a href=""><button class="btn btn-outline-primary w-100 view mx-auto rounded-5 ">View Profile</button></a>
+                        <div class="up">
+                            <h4 class="fs-5">Account</h4>
+                            <div class="df">
+                                <img src="box.svg" alt="">
+                                <a class="text-dark" href="#">Try Premium for free</a>
+                            </div>
+                            <div class="ik">
+                                <a class="text-dark" href="#">Settings & Privacy</a> <br>
+                                <a class="text-dark" href="#">Help</a> <br>
+                                <a class="text-dark" href="#">Language</a> <br>
+                                <h4 class="fs-5">Manage</h4>
+                                <a class="text-dark" href="#">Posts & Activity</a> <br>
+                                <a class="text-dark" href="#">Job Posting Account</a> <br>
+                                <a class="text-dark" href="signin.html">Sign Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work text-center ">
+                    <i class="fa-solid fa-braille"></i>
+                    <div class="d-flex align-items-center">
+                        <h6>For Business</h6>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <a class="text-center try" href="#">Try Premium for <br> free</a>
+
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="second">
+            <h5>Manage my network</h5>
+            <div>
+                <div>
+                    <p><i class="fa-solid fa-user-group"></i></p>
+                    <h6>Connections</h6>
+                </div>
+                <div>
+                        <i class="fa-solid fa-file-contract"></i>
+                        <h6>Contacts</h6>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user-group"></i>
+                    <h6>Following & followers</h6>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <h6>Groups</h6>
+                </div>
+                <div>
+                        <i class="fa-solid fa-users"></i>
+                        <h6>Events</h6>
+                </div>
+                <div>
+                        <i class="fa-solid fa-light fa-square-minus"></i>
+                        <h6>Pages</h6>
+                </div>
+                <div>
+                        <i class="fa-solid fa-rectangle-list"></i>
+                        <h6>Newsletters</h6>
+                </div>
+                <div>
+                        <i class="fa-solid fa-hashtag"></i>
+                        <h6>Hashtags</h6>
+                </div>
+            </div>
+            <div class="adv"></div>
+        </section>
+        <section class="four">
+            <div>
+                <h6>People you follow also follow these pages</h6>
+                <div>
+                    <button type="button" class="btn btn-secondary">Sell all</button>
+                </div>
+            </div>
+            <div class="ade">
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="profile pic.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Olawale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="pixxxxx.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Olawale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="profile pic.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Olawale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="pixxxxx.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Olawale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="ade-1">
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="profile pic.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Olawale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="pixxxxx.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Olawale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="profile pic.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Olawale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="pixxxxx.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Olawale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="oba">
+                <div class="word">
+                    <h6>Group you follow also follow these pages</h6>
+                    <div>
+                        <button type="button" class="btn btn-secondary">Sell all</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ade-2">
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="profile pic.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Adewale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="profile pic.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Adewale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="profile pic.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Adewale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="profile pic.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Adewale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ade-3">
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="profile pic.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Adewale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="profile pic.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Adewale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="profile pic.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Adewale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="profile pic.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Adewale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="oba-1">
+                <div class="word">
+                    <h6>Group you follow also subscribe to these <br> Newletters</h6>
+                    <div>
+                        <button type="button" class="btn btn-secondary">Sell all</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ade-4">
+                <div class="luk">
+                    <div class="con">
+                        <div class="pic">
+                            <img src="backgrrd.png" alt="">
+                            <img src="saypem.png" alt="">
+                        </div>
+                        <h6>Saipem<br> 1,576,765</h6>
+                        <button type="button" class="btn btn-secondary">Follow</button>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="con">
+                        <div class="pic">
+                            <img src="backgrrd.png" alt="">
+                            <img src="adnoc.png" alt="">
+                        </div>
+                        <h6>Saipem<br> 1,576,765</h6>
+                        <button type="button" class="btn btn-secondary">Follow</button>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="con">
+                        <div class="pic">
+                            <img src="backgrrd.png" alt="">
+                            <img src="saypem.png" alt="">
+                        </div>
+                        <h6>Saipem<br> 1,576,765</h6>
+                        <button type="button" class="btn btn-secondary">Follow</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ade-5">
+                <div class="luk">
+                    <div class="con">
+                        <div class="pic">
+                            <img src="backgrrd.png" alt="">
+                            <img src="saypem.png" alt="">
+                        </div>
+                        <h6>Saipem<br> 1,576,765</h6>
+                        <button type="button" class="btn btn-secondary">Follow</button>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="con">
+                        <div class="pic">
+                            <img src="backgrrd.png" alt="">
+                            <img src="subsec7.png" alt="">
+                        </div>
+                        <h6>Saipem<br> 1,576,765</h6>
+                        <button type="button" class="btn btn-secondary">Follow</button>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="con">
+                        <div class="pic">
+                            <img src="backgrrd.png" alt="">
+                            <img src="saypem.png" alt="">
+                        </div>
+                        <h6>Saipem<br> 1,576,765</h6>
+                        <button type="button" class="btn btn-secondary">Follow</button>
+                    </div>
+                </div>
+            </div>
+            <div class="oba-2">
+                <div class="word">
+                    <h6>Online events for you</h6>
+                    <div>
+                        <button type="button" class="btn btn-secondary">Sell all</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ade-6">
+                <div class="luk">
+                    <div class="con">
+                        <div class="pic">
+                            <img src="backgrrd.png" alt="">
+                            <img src="ics.png" alt="">
+                        </div>
+                        <h6>Saipem<br> 1,576,765</h6>
+                        <button type="button" class="btn btn-secondary">Follow</button>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="con">
+                        <div class="pic">
+                            <img src="backgrrd.png" alt="">
+                            <img src="subsec7.png" alt="">
+                        </div>
+                        <h6>Saipem<br> 1,576,765</h6>
+                        <button type="button" class="btn btn-secondary">Follow</button>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="con">
+                        <div class="pic">
+                            <img src="backgrrd.png" alt="">
+                            <img src="adnoc.png" alt="">
+                        </div>
+                        <h6>Saipem<br> 1,576,765</h6>
+                        <button type="button" class="btn btn-secondary">Follow</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ade-7">
+                <div class="luk">
+                    <div class="con">
+                        <div class="pic">
+                            <img src="backgrrd.png" alt="">
+                            <img src="ics.png" alt="">
+                        </div>
+                        <h6>Saipem<br> 1,576,765</h6>
+                        <button type="button" class="btn btn-secondary">Follow</button>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="con">
+                        <div class="pic">
+                            <img src="backgrrd.png" alt="">
+                            <img src="adnoc.png" alt="">
+                        </div>
+                        <h6>Saipem<br> 1,576,765</h6>
+                        <button type="button" class="btn btn-secondary">Follow</button>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="con">
+                        <div class="pic">
+                            <img src="backgrrd.png" alt="">
+                            <img src="saypem.png" alt="">
+                        </div>
+                        <h6>Saipem<br> 1,576,765</h6>
+                        <button type="button" class="btn btn-secondary">Follow</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ade-8">
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="pixxxxx.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Olawale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="profile pic.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Olawale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="pixxxxx.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Omowale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="profile pic.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Olawale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ade-9">
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="pixxxxx.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Omwale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="profile pic.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Olawale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="pixxxxx.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Omowale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="luk">
+                    <div class="details">
+                        <div class="nnn"></div>
+                        <div class="round"><img src="profile pic.png" alt=""></div>
+                        <div class="stay">
+                            <h6>Olawale</h6>
+                            <p>Civil|Engineer</p>
+                            <button type="button" class="btn btn-secondary">Connect</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="oba-3">
+                <div class="word">
+                    <h6>More suggestions for you</h6>
+                    <div>
+                        <button type="button" class="btn btn-secondary">Sell all</button>
+                    </div>
+                </div>
+            </div>
+                <!-- <div class="ade-10">
+                    <div class="luk"></div>
+                    <div class="luk"></div>
+                    <div class="luk"></div>
+                    <div class="luk"></div>
+                </div>
+                <div class="ade-11">
+                    <div class="luk"></div>
+                    <div class="luk"></div>
+                    <div class="luk"></div>
+                    <div class="luk"></div>
+                </div> -->
+        </section>
+        <section class="third">
+            <div>
+                <h6>No pending invitations</h6>
+                <div><h6>Manage</h6></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

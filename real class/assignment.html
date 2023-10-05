@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <input type="text" placeholder="username" id="input1"> <br> <br>
+        <input type="text" placeholder="email" id="input2"> <br> <br>
+        <input type="password" placeholder="password" id="input3"> <br> <br>
+        <input type="password" placeholder="Comfirm-password" id="input4"> <br> <br>
+        <button onclick="submit()">submit!!!</button>
+    </main>
+</body>
+<script>
+    let infoArr = [];
+    let inputone = document.getElementById("input1");
+    let inputtwo = document.getElementById("input2");
+    let inputthree = document.getElementById("input3");
+    let inputfour = document.getElementById("input4");
+
+
+    if (localStorage.getItem("infoArr" === null)) {
+        localStorage.setItem("infoArr", "[]")
+    }
+
+    function submit() {
+        let x1 = inputone.value;
+        let x2 = inputtwo.value;
+        let x3 = inputthree.value;
+        let x4 = inputfour.value;
+
+        let data = {
+            x1,
+            x2,
+            x3,
+            x4
+        }
+
+        let storedArray = localStorage.getItem("infoArr");
+        let parsedArr = JSON.parse(storedArray);
+        let infoArr2 = [...parsedArr, data];
+        localStorage.setItem("infoArr", JSON.stringify(infoArr2));
+
+        if (x1 == "" || x2 == "" || x3 == "" || x4 == "") {
+            alert("filed input cannot be empty")
+        }
+    }
+</script>
+</html>

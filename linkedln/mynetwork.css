@@ -1,0 +1,543 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    position: relative;
+}
+nav {
+    height: 70px;
+    padding: 12px 0;
+    width: 100%;
+    background-color: #1B1F23;
+    position: fixed;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 999;
+}
+.cont-div {
+    padding-bottom: 20px;
+}
+
+.big-div {
+    display: flex;
+    margin-top: 5px;
+}
+
+.logo {
+    width: fit-content;
+}
+.sml-scr-sch{
+    display: none;
+    padding-left: 20px;
+}
+.inppp{
+    border: none;
+    margin-top: 5px;
+    /* width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+.input_div {
+    width: fit-content;
+    padding: 0 10px;
+    height: fit-content;
+    background-color: aliceblue;
+}
+
+.inp {
+    width: 300px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+
+.links {
+    text-decoration: none;
+}
+
+.links:hover {
+    color: black !important;
+    text-decoration: underline;
+}
+
+.drop-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.image_div {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.users {
+    position: relative;
+}
+
+.hh {
+    background-color: #fff;
+    position: absolute;
+    top: 110%;
+    width: 300px;
+    right: 0;
+    display: none;
+}
+
+.users:focus-within .hh {
+    display: block;
+}
+@media (max-width  : 1200px) {
+    .input_div{
+        display: none;
+    }
+    .sml-scr-sch{
+        display: block!important;
+    }
+  
+}
+@media (max-width : 1000px) {
+    .work, .try {
+        display: none;
+    }
+}
+@media (max-width : 770px) {
+    .users{
+        display: none;
+    }
+}
+@media (max-width : 560px) {
+    .users{
+        display: none;
+    }
+    .texts{
+        display: none;
+    }
+    .fa-ellipsis{
+        display: block!important;
+    }
+    .dddd{
+        padding-top: 14px;
+        padding-right: 14px;
+    }
+    .big-div {
+        padding-top: 13px;
+    }
+    body{
+        overflow-x: hidden
+    };
+}
+.second{
+    position: fixed;
+    /* position: absolute; */
+    height: 600px;
+    width: 300px;
+    background-color: #1B1F23;
+    border-radius: 10px; 
+    top: 75px; 
+    left: 80px;
+    color: white;
+}
+.second div div{
+    display: flex;
+    align-items:  baseline;
+    padding: 1px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.second h5{
+    padding: 5px;
+    margin-left: 5px;
+}
+.second div h6{
+    padding: 10px;
+    font-size: 12px;
+}
+.second div div:hover{
+    background-color: gray;
+    width: 100%;
+    margin-left: 0px;
+}
+.second .adv{
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    background-color: greenyellow;
+    background-image: url(https://media.licdn.com/dms/image/D560CAQHUo-AZc5Nkkg/spinmail-bannerimage-shrink_300_250/0/1646842436854?e=1694084400&v=beta&t=6WAxGVzpiRhuiZmoy3sYEPzE0czeXOnvOjSJdVL1pYA);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.third{
+    position: absolute;
+    top: 75px;
+    left: 400px;
+    bottom: 500px;
+    height: 50px;
+    width: 700px;
+    background-color: #1B1F23;
+    /* background-color: #1B1F23; */
+    border-radius: 10px;
+}
+.third div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 15px;
+    margin-top: 6px;
+    color: white;
+}
+.four{
+    position: absolute;
+    height: 4000px;
+    width: 700px;
+    background-color: #1B1F23;
+    border-radius: 10px;  
+    left: 400px;
+    top: 150px;
+}
+.four div{
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-between;
+    padding-inline: 15px;
+    margin-top: 10px;
+    color: white;
+}
+.four .ade{
+    height: 600px;
+    width: 700px;
+    /* background-color: burlywood; */
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+.four .ade-1{
+    height: 500px;
+    width: 700px;
+    /* background-color: red; */
+    position: absolute;
+    top: 270px;
+    left: 0;
+}
+.ade-1 .luk{
+    height: 230px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 3px 3px 3px wheat;
+    transition: all  0.2s ease-in;
+}
+.ade-1 .luk:hover{
+    box-shadow: 3px 3px 3px wheat;
+    transform: translateY(-4px);
+}
+.ade .luk{
+    height: 200px;
+    width: 400px;
+    background-color: white;
+    margin: 10px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px wheat;
+    transition: all  0.2s ease-in;
+}
+.ade .luk:hover{
+    box-shadow: 3px 3px 3px wheat;
+    transform: translateY(-4px);
+}
+.details{
+    position: absolute;
+}
+.details .nnn{
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    top: -20px;
+    border-radius: 10px 10px 0 0;
+    left: -15px;
+    background-image: url(back.g.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.luk .details img{
+    position: absolute;
+    width: 80px;
+    border-radius: 100%;
+    top: 4px;
+    left: 20px;
+}
+.details .stay{
+    position: absolute;
+    top: 75px;
+    display: block;
+    color: green;
+}
+.details .stay p{
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+.details .stay button{
+    position: absolute;
+    left: 5px;
+    top: 55px;
+}
+.four .oba{
+    height: 200px;
+    width: 700px;
+    /* background-color: olive; */
+    position: absolute;
+    top: 510px;
+    left: 0;
+    color: white;
+}
+.four .oba .word button{
+    margin-left: 235px;
+    color: white;
+}
+.four .ade-2{
+    height: 500px;
+    width: 700px;
+    /* background-color: blue; */
+    position: absolute;
+    top: 570px;
+    left: 0;
+}
+.ade-2 .luk{
+    height: 230px;
+    width: 400px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px wheat;
+    transition: all  0.2s ease-in;
+}
+.ade-2 .luk:hover{
+    box-shadow: 3px 3px 3px wheat;
+    transform: translateY(-4px);
+}
+.four .ade-3{
+    height: 500px;
+    width: 700px;
+    /* background-color: green; */
+    position: absolute;
+    top: 830px;
+    left: 0;
+}
+.ade-3 .luk{
+    height: 230px;
+    width: 400px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px wheat;
+    transition: all  0.2s ease-in;
+}
+.ade-3 .luk:hover{
+    box-shadow: 3px 3px 3px wheat;
+    transform: translateY(-4px);
+}
+.four .ade-4{
+    height: 500px;
+    width: 700px;
+    /* background-color: green; */
+    position: absolute;
+    top: 1150px;
+    left: 0;
+}
+.ade-4 .luk{
+    height: 250px;
+    width: 270px;
+    background-color: white;
+    /* padding: 5px; */
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px wheat;
+    transition: all  0.2s ease-in;
+}
+.ade-4 .luk:hover{
+    box-shadow: 3px 3px 3px wheat;
+    transform: translateY(-4px);
+}
+.four .ade-5{
+    height: 500px;
+    width: 700px;
+    /* background-color: green; */
+    position: absolute;
+    top: 1430px;
+    left: 0;
+}
+.ade-5 .luk{
+    height: 250px;
+    width: 270px;
+    background-color: white;
+    /* padding: 5px; */
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px wheat;
+    transition: all  0.2s ease-in;
+}
+.ade-5 .luk:hover{
+    box-shadow: 3px 3px 3px wheat;
+    transform: translateY(-4px);
+}
+.four .oba-1{
+    height: 200px;
+    width: 700px;
+    /* background-color: olive; */
+    position: absolute;
+    top: 1070px;
+    left: 0;
+    color: white;
+}
+.four .oba-1 .word button{
+    margin-left: 235px;
+    color: white;
+}
+.four .oba-2{
+    height: 200px;
+    width: 700px;
+    /* background-color: olive; */
+    position: absolute;
+    top: 1690px;
+    left: 0;
+    color: white;
+}
+.four .oba-2 .word button{
+    margin-left: 380px;
+    color: white;
+}
+.four .ade-6{
+    height: 500px;
+    width: 700px;
+    /* background-color: green; */
+    position: absolute;
+    top: 1750px;
+    left: 0;
+}
+.ade-6 .luk{
+    height: 230px;
+    width: 430px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px wheat;
+    transition: all  0.2s ease-in;
+}
+.ade-6 .luk:hover{
+    box-shadow: 3px 3px 3px wheat;
+    transform: translateY(-4px);
+}
+.four .ade-7{
+    height: 500px;
+    width: 700px;
+    /* background-color: green; */
+    position: absolute;
+    top: 2000px;
+    left: 0;
+}
+.ade-7 .luk{
+    height: 230px;
+    width: 430px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px wheat;
+    transition: all  0.2s ease-in;
+}
+.ade-7 .luk:hover{
+    box-shadow: 3px 3px 3px wheat;
+    transform: translateY(-4px);
+}
+.four .ade-8{
+    height: 500px;
+    width: 700px;
+    /* background-color: red; */
+    position: absolute;
+    top: 2320px;
+    left: 0;
+}
+.ade-8 .luk{
+    height: 230px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 3px 3px 3px wheat;
+    transition: all  0.2s ease-in;
+}
+.ade-8 .luk:hover{
+    box-shadow: 3px 3px 3px wheat;
+    transform: translateY(-4px);
+}
+.four .oba-3{
+    height: 200px;
+    width: 700px;
+    /* background-color: olive; */
+    position: absolute;
+    top: 2250px;
+    left: 0;
+    color: white;
+}
+.four .oba-3 .word button{
+    margin-left: 350px;
+    color: white;
+}
+.four .ade-9{
+    height: 500px;
+    width: 700px;
+    /* background-color: red; */
+    position: absolute;
+    top: 2580px;
+    left: 0;
+}
+.ade-9 .luk{
+    height: 230px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 3px 3px 3px wheat;
+    transition: all  0.2s ease-in;
+}
+.ade-9 .luk:hover{
+    box-shadow: 3px 3px 3px wheat;
+    transform: translateY(-4px);
+}
+.con{
+    position: absolute;
+}
+.pic img{
+    position: absolute;
+    width: 215px;
+    top: -10px;
+    border-radius: 10px 10px 0 0;
+    left: -15px;
+    height: 70px;
+}
+.pic img:last-child{
+    position: absolute;
+    width: 90px;
+    top: 10px;
+    left: 45px; 
+}
+.luk .con h6{
+    color: red;
+    position: absolute;
+    top: 110px;
+    left: 60px; 
+}
+.con button{
+    position: absolute;
+    width: 180px;
+    left: 2px;
+    top: 180px;
+    border-radius: 5px;
+    color: red;
+}
+

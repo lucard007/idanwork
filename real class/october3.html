@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+</body>
+<script>
+    //Math.random, math.floor, date
+    //math.random: creates a random number
+    let random = Math.random()*100;//the number is alway a decimal less than 1. to get higher number, multiply by 10, 100,...
+    console.log(random);
+    //math.floor: removes all decimals after the whole number
+    let random2 = Math.floor(Math.random()*10);
+    console.log(random2);
+    //Assignment2 show and hide password btn
+    //Assignment3: add confirm password input and if password and confirm password does not match, alert password match
+    //Also, password must not be less than 8 characters
+    //No input field must not be empty
+    //when log in is successful, go to a dash board
+
+
+    //Date: this used to chesck when an event happens in js
+    let date = new Date();
+    console.log(date);
+    console.log(date.getFullYear());
+    console.log(date.getHours());
+    console.log(date.getMinutes());
+    console.log(date.getSeconds());
+
+    let h1 = document.getElementById("h1");
+    let hour = date.getHours();
+    let min = date.getMinutes();
+    let sec = date.getSeconds();
+    h1.innerText = `Time: ${hour}: ${min}: ${sec}`;
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="input1">
+    <button onclick="check()">check!!!</button>
+</body>
+<script>
+    let x = document.getElementById("input1");
+
+    function check() {
+        let guess = Math.floor(Math.random()*10);
+        console.log(guess);
+        let x2 = x.value;
+        
+        if (Number(x2) === Number(guess)) {
+            alert("matched")
+        } else(
+            alert("not matched")
+        )
+
+    }
+
+</script>
+</html>

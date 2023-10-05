@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+nav .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2.5rem;
+    height: 60px;
+    background-color: whitesmoke;
+}
+nav .top .left,
+nav .top .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 1.5rem; */
+}
+nav .top .right{
+    padding-left: 70px;
+    display: flex;
+    gap: 5px;
+}
+nav .top .logo i{
+    font-size: 40px;
+    margin-left: 70px;
+    cursor: pointer;
+}
+nav .top .left .input{
+    background-color: aliceblue;
+    width: 100%;
+    padding: 0.5rem 0.8rem;
+    gap: 0.5rem;
+    display: flex;
+    border-radius: 7px;
+    align-items: center;
+}
+nav .top .left .input input{
+    border: none;
+    width: 250px;
+    background-color: transparent;
+}
+nav .top .left .input i{
+    font-size: 13px;
+    color: grey;
+}
+nav .top .right .home,
+nav .top .right .network,
+nav .top .right .job,
+nav .top .right .message,
+nav .top .right .me,
+nav .top .right .work,
+nav .top .right .notify,
+nav .top .right .users
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.right a{
+    text-decoration: none;
+}
+nav .top .right .home i,
+nav .top .right .network i,
+nav .top .right .job i,
+nav .top .right .message i,
+nav .top .right .notify i,
+nav .top .right .users i
+{
+    font-size: 17px;
+    color: grey;
+}
+nav .top .right .work .dd,
+nav .top .right .me .dd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: grey;
+}
+nav .top .right .users{
+    margin-left: -52px;
+}
+nav .top .right .me i:first-child{
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+/* nav .top .right .home:hover,
+nav .top .right .network:hover,
+nav .top .right .job:hover,
+nav .top .right .message:hover,
+nav .top .right .me .dd:hover,
+nav .top .right .work .dd:hover,
+nav .top .right .notify:hover{
+    color: black;
+} */
+nav .top .right .network,
+nav .top .right .job,
+nav .top .right .message,
+nav .top .right .work,
+nav .top .right .notify
+nav .top .right .users
+{
+    color: grey;
+}
+nav .top .right .home h6,
+nav .top .right .network h6,
+nav .top .right .job h6,
+nav .top .right .message h6,
+nav .top .right .notify h6,
+nav .top .right .work h6,
+nav .top .right .me h6,
+nav .top .right .users h6
+{
+    font-size: 12px;
+    align-items: center;
+    padding: auto;
+}
+.notif{
+    margin-right: 22px;
+}
+.top a{
+    text-decoration: none;
+    width: 120px;
+    height: 10px;
+    color: rgb(108, 69, 21);
+    cursor: pointer;
+    text-align: center;
+    font-size: 12px;
+}
+.top a:hover{
+    text-decoration: underline;
+}
+.containers{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 8%;
+    justify-content: space-between;
+}
+.aside{
+    flex-basis: 25%;
+    align-self: flex-start;
+}
+.main-section{
+    flex-basis: 72%;
+   
+    
+}
+ .sidebar{
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    color: grey;
+}
+
+.sidebar .top{
+    margin: 20px 15px;
+    color: black;
+}
+.sidebar .low a,
+.sidebar .lo a,
+.sidebar .last a,
+.sidebar .sidelow a{   
+    display: flex;
+    margin-top: 10px;
+    gap: 1rem;
+    margin-left: 20px;
+    color: grey;}
+
+
+.sidebar .name a,
+.sidebar .la a,
+.sidebar .las a,
+.sidebar .sid a,
+.sidebar .sh
+{
+    color: grey;
+    display: flex;
+    gap: 1rem;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.sidebar .d{
+    display: flex;
+    margin-left: 250px;
+    gap: 10px;
+    color: black;
+}
+.sidebar .d h6{
+    font-size: 13px;
+    color: black;
+}
+.sidebar .mm h6{
+    font-size: 12px;
+    align-content: center;
+    justify-content: center;
+    font-weight: 400;
+}
+.sidebar .qw{
+    margin: auto;
+    align-items: center;
+}
+.qw img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.sidebar .qw i{
+    font-size: 45px;
+}
+.sidebar .q h6{
+    font-size: 14px;
+}
+.sidebar .q button{
+    color: #487bd4;
+    width: 120px;
+    border-radius: 15px;
+    background-color: transparent;
+    height: 35px;
+}
+.sidebar .g{
+    color: blue;
+}
+.main-section .ma{
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.main-section .ma h5{
+    font-size: 17px;
+}
+.se .im i{
+    margin-left: 53rem;
+    margin-top: 15px;
+    font-size: 13px;
+    color: grey;
+}
+.se .in i{
+    font-size: 50px;
+}
+.se .in{
+    display: flex;
+    gap: 1rem;
+    margin-left: 35px;
+}
+.se .in h6{
+    margin-top: 15px;
+}
+.se .il{
+   display: flex;
+}
+.se .il h5{
+    color: grey;
+    margin-top: 10px;
+    font-size: 12px;
+    margin-left: 35px;
+}
+.se .il a{
+    font-size: 12px;
+}
+.se .yy input{
+    margin-left: 35px;
+    width: 50rem;
+}
+.se .yy button{
+    border-radius: 17px;
+    color: blue;
+    width: 100px;
+    height: 35px;
+    margin: 10px 35px;
+}
+.se .yy a{
+    text-decoration: none;
+    color: grey;
+    margin: 10px 35px;
+}
+.se .yy{
+    margin-bottom: 30px;
+}
+
+.main-section .se{
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.main-section .n{
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.n .x{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 15px 0 15px;
+}
+.n .x i{
+    font-size: 13px;
+    color: grey;
+}
+.n .l h6{
+    font-size: 14px;
+    color: grey;
+    margin-left: 15px;
+    font-weight: 400;
+}
+.n .k img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    
+}
+.n .k h6{
+    font-size: 14px;
+    color: grey;
+    font-weight: 400;
+    margin-top: 5px;
+    gap: 5  5px;
+}
+.n .k{
+    display: flex;
+}
+.n .k span{
+    margin-left: 15px;
+}
+.n .jj button{
+    color: black;
+    background-color: rgb(229, 178, 84);
+    border-radius: 20px;
+    width: 180px;
+    height: 32px;
+    border: none;
+    margin-left: 15px;
+}
+.n .jj{
+    margin-bottom: 20px;
+}
+.main-section .m{
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.m .kk{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 15px 0 15px;
+}
+.m .kk h6{
+    font-family: 400;
+}
+.m .kk a{
+    text-decoration: none;
+    color: grey;
+}
+.m .aside .sidebar
+{
+    display: flex;
+}
+.aside{
+    width: 250px;
+    height: 250px;
+}
+.sidebar .to{
+    background-color: dimgray;
+    width: 100%;
+    height: 8vh;
+    position: absolute;
+}
+
+.sidebar .to img{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    left: 20%;
+    transform: translate(-50%);
+    top: 30%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+/* .card {
+    Add shadows to create the "card" effect
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding-bottom: 10px;
+} */
+ On mouse-over, add a deeper shadow
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  Add some padding inside the card container
+  .container {
+    padding: 2px 16px;
+  }
+  .hy{
+    display: flex;
+    padding: 0 15px 0 15px;
+    gap: 10px;
+  }
+  .card img{
+    width: 5px;
+    height: 90px;
+    border-radius: 5px;
+  }
+  .aside button{
+    width: 100px;
+    height: 25px;
+    color: rgb(60, 115, 233);
+    border: 1px solid rgb(60, 115, 233);
+    background-color: transparent;
+    border-radius: 20px;
+  }
+
+  .accordion{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 72rem;
+    border: none;
+}
+.accordion:hover{
+    background-color: lightgrey;
+}
+.accordion-header i{
+    gap: 3rem;
+
+}
+
+.ml img, .ds img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.ml{
+    margin-top: 10px;
+}
+.ml h5{
+    font-size: 16px;
+}
+.ml strong{
+    font-size: 13px;
+    font-weight: 300;
+}
+.ml h4{
+    font-size: 14px;
+    margin-top: -5px;
+}
+.ds .ml{
+    display: flex;
+    margin-left: 10px;
+}
+.aw .input{
+    padding: 10px 15px;
+    border: none;
+    background-color:aliceblue;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+}
+.aw .input i{
+    color: grey;
+    font-size: 14px;
+}
+.aw .input input{
+    border: none;
+    width: 250px;
+    height: 15px;
+    background-color: transparent;
+    margin-left: 10px;
+}
+/* ......................................................................... */
+
+@media only screen and (max-width:600px){
+    .right-side{
+       flex-basis: 100%;
+    }
+    .containers{
+      /* padding: 15px 6px; */
+    }
+    .aside{
+        flex-basis: 100%;
+    }
+    .main-section{
+        flex-basis: 70%;
+    }
+ } 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="number" id="input1"> <br> <br>
+        <input type="number" id="input2"> <br> <br>
+        <button onclick="compareValue()">Compare</button>
+    </div>
+</body>
+<script>
+    let inputone = document.getElementById("input1");
+    let inputtwo = document.getElementById("input2");
+
+    function compareValue() {
+        const inputOne = inputone.value
+        const inputTwo = inputtwo.value
+
+        if (inputOne === inputTwo) {
+            alert("working");
+        }else {
+            alert("not working");
+        }
+    }
+
+</script>
+</html>

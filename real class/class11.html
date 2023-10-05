@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Local Storage: this is a particular section of a browser where user data is stored
+    //Only a string can be saved in the local storage
+    //To save to local storage
+    let name = "Roronoa Zoro";
+    localStorage.setItem("name", name);
+
+    let arrTwo =[
+        {name:"Test1", age:1111},
+        {name:"Test2", age:1112},
+        {name:"Test3", age:1113},
+        {name:"Test4", age:1114},
+        {name:"Test5", age:1115},
+        {name:"Test6", age:1116},
+        {name:"Test7", age:1117},
+        {name:"Test8", age:1118},
+        {name:"Test9", age:1119},
+    ]
+
+    let strArrTwo = JSON.stringify(arrTwo);//to convert array to string
+    console.log(typeof arrTwo);
+    console.log(typeof strArrTwo);
+    localStorage.setItem("arrTwo", strArrTwo);
+
+    //To retrieve from local storage
+    let test = localStorage.getItem("arrTwo");
+    console.log(test);
+    console.log(JSON.parse(test));//to convert frdom string to array
+
+    //To remove from local storage
+    localStorage.removeItem("name");
+
+    //To clear the local storage
+    localStorage.clear()
+</script>
+</html>

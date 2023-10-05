@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="first">
+    <input type="text" id="second" readonly>
+    <button onclick="getNum()">click me!!!</button>
+</body>
+<script>
+
+    function getNum() {
+        let text = document.getElementById("first").value;
+        let text2 = text.replace("i love amala", "i love eba");
+        document.getElementById("second").value = text2
+    }
+</script>
+</html>

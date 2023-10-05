@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="sign-form">
+        <input type="text" placeholder="username" id="signin-email" required>
+        <input type="text" placeholder="password" id="signin-password" required>
+    </div>
+    <div>
+        <button type="submit" onclick="login()">login!!!!</button>
+    </div>
+</body>
+<script>
+
+
+
+    function login() {
+        const inputOne = document.getElementById("signin-email").value;
+        const inputTwo = document.getElementById("signin-password").value;
+
+
+        const storedUsers = JSON.parse(localStorage.getItem("infoArr"));
+
+        if (storedUsers && Array.isArray(storedUsers)) {
+            const matchedUsers = storedUsers.find((user) => {
+                return user.email === inputOne && user.password === inputTwo
+            });
+
+            if (matchedUsers) {
+                alert("login succesful")
+
+                window.location.href = 'dash.html';
+            }else (
+                alert("not sucessful")
+            )
+
+        }
+    }    
+    
+    // document.getElementById('sign-form').addEventListener("submit", function(event) {
+    //     event.preventDefault();
+
+    //     let users = JSON.parse(localStorage.getItem('users')) || [];
+    //     let email = document.getElementById('signin-email').value;
+    //     let password = document.getElementById('signin-password').value;
+    
+    //     let user = users.find((user) => user.email === email && user.password === password);
+    
+    //     if (!user) {
+    //     alert('User does not exist');
+    //     return;
+    //     }
+    
+    //     alert('Welcome User--- login sucessful');
+
+    // })
+</script>
+
+</html>

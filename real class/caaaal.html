@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="first"></h1>
+        <h3 id="second"></h3>
+    </div>
+    <div>
+        <button onclick="display(2)">2</button>
+        <button onclick="display(3)">3</button>
+        <button onclick="display(4)">4</button>
+        <button onclick="display(5)">5</button>
+        <button onclick="display(6)">6</button>
+    </div>
+</body>
+<script>
+    let first = document.getElementById("first");
+    function display(a) {
+        first.innerHTML += a
+    }
+</script>
+</html>

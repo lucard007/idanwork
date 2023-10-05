@@ -1,0 +1,658 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+nav .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2.5rem;
+    height: 60px;
+    background-color: whitesmoke;
+}
+nav .top .left,
+nav .top .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 1.5rem; */
+}
+nav .top .right{
+    padding-left: 70px;
+    display: flex;
+    gap: 5px;
+}
+nav .top .logo i{
+    font-size: 40px;
+    margin-left: 70px;
+    cursor: pointer;
+}
+nav .top .left .input{
+    background-color: aliceblue;
+    width: 100%;
+    padding: 0.5rem 0.8rem;
+    gap: 0.5rem;
+    display: flex;
+    border-radius: 7px;
+    align-items: center;
+}
+nav .top .left .input input{
+    border: none;
+    width: 250px;
+    background-color: transparent;
+}
+nav .top .left .input i{
+    font-size: 13px;
+    color: grey;
+}
+nav .top .right .home,
+nav .top .right .network,
+nav .top .right .job,
+nav .top .right .message,
+nav .top .right .me,
+nav .top .right .work,
+nav .top .right .notify,
+nav .top .right .users
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.right a{
+    text-decoration: none;
+}
+nav .top .right .home i,
+nav .top .right .network i,
+nav .top .right .job i,
+nav .top .right .message i,
+nav .top .right .notify i,
+nav .top .right .users i
+{
+    font-size: 17px;
+    color: grey;
+}
+nav .top .right .work .dd,
+nav .top .right .me .dd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: grey;
+}
+nav .top .right .users{
+    margin-left: -52px;
+}
+nav .top .right .me i:first-child{
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+/* nav .top .right .home:hover,
+nav .top .right .network:hover,
+nav .top .right .job:hover,
+nav .top .right .message:hover,
+nav .top .right .me .dd:hover,
+nav .top .right .work .dd:hover,
+nav .top .right .notify:hover{
+    color: black;
+} */
+nav .top .right .network,
+nav .top .right .job,
+nav .top .right .message,
+nav .top .right .work,
+nav .top .right .notify
+nav .top .right .users
+{
+    color: grey;
+}
+nav .top .right .home h6,
+nav .top .right .network h6,
+nav .top .right .job h6,
+nav .top .right .message h6,
+nav .top .right .notify h6,
+nav .top .right .work h6,
+nav .top .right .me h6,
+nav .top .right .users h6
+{
+    font-size: 12px;
+    align-items: center;
+    padding: auto;
+}
+.notif{
+    margin-right: 22px;
+}
+.top a{
+    text-decoration: none;
+    width: 120px;
+    height: 10px;
+    color: rgb(108, 69, 21);
+    cursor: pointer;
+    text-align: center;
+    font-size: 12px;
+}
+.top a:hover{
+    text-decoration: underline;
+}
+.containers{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 10%;
+}
+.aside{
+    flex-basis: 67%;
+    /* align-self: flex-start; */
+}
+/* .main-section{
+    flex-basis: 30%;
+   
+    
+} */
+.sidebar{
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+.aw{
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+.ds{
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    display: flex;
+}
+.aw .input{
+    padding: 10px 15px;
+    border: none;
+    background-color:aliceblue;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+}
+.aw .input i{
+    color: grey;
+    font-size: 14px;
+}
+.aw .input input{
+    border: none;
+    width: 250px;
+    height: 15px;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.h i{
+    color: grey;
+    padding: 10px;
+    font-size: 20px;
+}
+.h{
+    padding-left: 8rem;
+}
+.sidebar h5{
+    padding: 10px 0 0 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.ki .g{
+    display: flex;
+    padding-left: 15px;
+}
+.ki{
+    padding-left: 20px;
+    align-items: center;
+}
+.g i{
+    font-size: 8px;
+    font-weight: 900px;
+    margin: 7px 6px 0 0;
+    color: rgb(16, 52, 16);
+    margin-top: -3px;
+}
+.g h6{
+    font-size: 12px;
+    font-weight: 400;
+    color: grey;
+    margin-top: -10px;
+}
+.lp i{
+    color: grey;
+    display: flex;
+}
+.lp{
+    margin: -35px 0 0 25rem;
+}
+.ml img, .ds img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.ml{
+    margin-top: 10px;
+}
+.ml h5{
+    font-size: 16px;
+}
+.ml strong{
+    font-size: 13px;
+    font-weight: 300;
+}
+.ml h4{
+    font-size: 14px;
+    margin-top: -5px;
+}
+.ds .ml{
+    display: flex;
+    margin-left: 10px;
+}
+.ds .ml h5{
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 10px;
+}
+.ds .ml h6{
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 80px;
+}
+.sidebar .play{
+    font-size: 13px;
+    color: grey;
+}
+
+.main-section .ma{
+    background-color: #fff;
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+
+.ma .middle{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 15px 0 15px;
+}
+.ma i{
+    color: grey;
+}
+.ty .mar button{
+    width: 200px;
+    border-radius: 20px ;
+    color: rgb(60, 115, 233);
+    border: 1px solid #487bd4;
+    margin-left: 15px;
+    background-color: transparent;
+}
+.ty .mn button
+{
+    width: 60px;
+    border-radius: 20px;
+    color: rgb(60, 115, 233);
+    border: 1px solid #487bd4;
+    margin-left: 10px;
+    background-color: transparent;
+}
+.ty .mb button
+{
+    width: 90px;
+    border-radius: 20px;
+    color: rgb(60, 115, 233);
+    margin-left: 10px;
+    border: 1px solid #487bd4;
+    background-color: transparent;
+}
+.ty .mv button{
+    width: 90px;
+    border-radius: 20px;
+    color: rgb(60, 115, 233);
+    margin-left: 10px;
+    border: 1px solid #487bd4;
+    background-color: transparent;
+}
+.ty .mc button{
+    width: 100px;
+    border-radius: 20px;
+    color: rgb(60, 115, 233);
+    margin-left: 10px;
+    border: 1px solid #487bd4;
+    background-color: transparent;
+}
+.tr .mx button{
+    width: 110px;
+    border-radius: 20px;
+    color: rgb(60, 115, 233);
+    margin-left: 15px;
+    border: 1px solid #487bd4;
+    background-color: transparent;
+}
+.tr .mz button{
+    width: 110px;
+    border-radius: 20px;
+    color: rgb(60, 115, 233);
+    margin-left: 10px;
+    border: 1px solid #487bd4;
+    background-color: transparent;
+}
+.ty{
+    display: flex;
+}
+.tr{
+    display: flex;
+    margin-top: 5px;
+}
+
+
+
+.n{
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+.n .ii{
+    margin: 0 10px 0 15px;
+}
+.n .ii h5{
+    padding-top: 20px;
+    font-size: 19px;
+}
+.n .ii p{
+    font-size: 15px;
+    color: grey;
+    margin-top: -10px;
+}
+.ai img{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+}
+.oo span{
+    display: flex;
+}
+.oo span h6{
+    color: grey;
+    font-size: 14px;
+}
+.ia i{
+    padding-top: -15;
+}
+.ia img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.ia span{
+    color: grey;
+    font-size: 12px;
+}
+.ia .du{
+    display: flex;
+}
+.du span{
+    margin: 10px 0 0 10px;
+}
+.uu, .kl, .lp{
+    display: flex;
+    gap: 1rem;
+}
+.oo{
+    display: flex;
+    gap: 12rem;
+}
+.de{
+    display: flex;
+    gap: 2rem;
+    color: grey;
+    justify-content: center;
+}
+.de:hover{
+    background-color: rgb(188, 181, 181);
+}
+
+.accordion{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 72rem;
+    border: none;
+}
+.accordion:hover{
+    background-color: lightgrey;
+}
+.accordion-header i{
+    gap: 3rem;
+
+}
+
+.ml img, .ds img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.ml{
+    margin-top: 10px;
+}
+.ml h5{
+    font-size: 16px;
+}
+.ml strong{
+    font-size: 13px;
+    font-weight: 300;
+}
+.ml h4{
+    font-size: 14px;
+    margin-top: -5px;
+}
+.ds .ml{
+    display: flex;
+    margin-left: 10px;
+}
+.aw .input{
+    padding: 10px 15px;
+    border: none;
+    background-color:aliceblue;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+}
+.aw .input i{
+    color: grey;
+    font-size: 14px;
+}
+.aw .input input{
+    border: none;
+    width: 250px;
+    height: 15px;
+    background-color: transparent;
+    margin-left: 10px;
+}
+/* ......................................................................... */
+
+.right-side{
+   
+    flex-basis: 29%;
+    width: 100%;
+    margin-left: 25px;
+}
+.keep{
+    background-color: #fff;
+    border-radius: 10px;
+}
+.kil{
+    padding: 20px 15px 0 15px;
+}
+.kil p{
+    color: grey;
+    font-size: 13px;
+}
+.lj img{
+    width: 70px;
+    height: 50px;
+    border-radius: 10px;
+}
+.keep .ko{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 10px 15px;
+    background-color: rgb(247, 244, 244) ;
+}
+.keep .ko:hover{
+    background-color: aliceblue;
+}
+.km h6{
+    font-size: 14px;
+    color: rgb(64, 57, 57);
+    padding: 10px 0 0 15px;
+}
+.ol{
+    display: flex;
+    gap: 1rem;
+    color: grey;
+    padding-left: 15px;
+}
+.ol h6{
+    font-size: 14px;
+}
+.ol i{
+    margin-top: -3px;
+}
+.right-side p{
+    font-size: 12px;
+}
+.right-side p:hover{
+    text-decoration: underline;
+    color: #487bd4;
+}
+.right-side .w
+{
+    display: flex;
+    margin: 20px 15px 0 35px;
+    gap: 1rem;
+}
+.right-side .ko .kj h6{
+    color: black;
+}
+.right-side .e,
+.right-side .r,
+.right-side .t
+{
+    display: flex;
+    margin: 0 15px 0 35px;
+    gap: 1rem;
+}
+.right-side .ko{
+    display: flex;
+    padding-left: 20px;
+}
+.right-side .ko h6{
+    color: #487bd4;
+    font-size: 13px;
+}
+.right-side span{
+    font-size: 12px;
+}
+
+.accordion{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 72rem;
+    border: none;
+}
+.accordion:hover{
+    background-color: lightgrey;
+}
+.accordion-header i{
+    gap: 3rem;
+
+}
+
+.ml img, .ds img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.ml{
+    margin-top: 10px;
+}
+.ml h5{
+    font-size: 16px;
+}
+.ml strong{
+    font-size: 13px;
+    font-weight: 300;
+}
+.ml h4{
+    font-size: 14px;
+    margin-top: -5px;
+}
+.ds .ml{
+    display: flex;
+    margin-left: 10px;
+}
+.aw .input{
+    padding: 10px 15px;
+    border: none;
+    background-color:aliceblue;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+}
+.aw .input i{
+    color: grey;
+    font-size: 14px;
+}
+.aw .input input{
+    border: none;
+    width: 250px;
+    height: 15px;
+    background-color: transparent;
+    margin-left: 10px;
+}
+/* .................................................................................. */
+
+
+@media only screen and (max-width:600px){
+    .right-side{
+       flex-basis: 100%;
+    }
+    .containers{
+      /* padding: 15px 6px; */
+    }
+    .aside{
+        flex-basis: 100%;
+    }
+    .main-section{
+        flex-basis: 70%;
+    }
+    }

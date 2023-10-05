@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    div{
+        text-align: center;
+        border: 2px solid red;
+        height: 400px;
+        width: 300px;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 50px;
+        box-shadow: 5px 5px;
+    }
+    div h2{
+        color: hotpink;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    div .xx{
+        height: 30px;
+        border: 1px dashed green;
+    }
+    div button{
+        height: 30px;
+        background-color: aqua;
+        border: 1px solid green;
+        border-radius: 10px;
+
+    }
+</style>
+<body>
+    <div>
+        <h2>GRADING SCORE CHECKER</h2>
+        <input type="text" placeholder="Insert your score" class="xx">
+        <button onclick="display()">Check Now</button>
+        <div class="yy"></div>
+    </div>
+</body>
+<script>
+    let xx = document.querySelector(".xx");
+    let yy = document.querySelector(".yy");
+    function display() {
+        let text = xx.value
+        if (text >=70) {
+            yy.innerHTML="A (Distinction)"
+        }
+        else if(text <=49) {
+            yy.innerHTML="C "
+        }
+         if(text <=39) {
+            yy.innerHTML="D "
+        }
+        
+    }
+</script>
+</html>

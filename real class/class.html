@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head1"></h1>
+</body>
+<script>
+
+    // Operators in javascript
+    let test1 = 45;
+    let test2 = 55;
+
+    test1 += test2
+    console.log(test1);
+
+    test1 -= 20;
+    console.log(test1);
+
+    //arithmetic operators 
+    let test3 = 75;
+    let test4 = 25;
+    console.log(test3 + test4); // Returns the sum of test3 and test4
+    console.log(test3 - test4); // Returns the difference of test3 and test4
+    console.log(test3 / test4); // Returns the  quotient of test3 and test4
+    console.log(test3 * test4); // Returns the product of test3 and test4
+    console.log(test3 % test4); // Returns the reminder of test3 and test4
+    console.log(test3 ** test4); // Returns the exponent of test3 and test4
+    console.log(test3++); // Returns the value of test3 and increments by 1
+
+    //comparison operators
+    console.log(test3) == (test4); // Returns true if test3 is equal to test4
+    console.log(45 == "45"); // Returns true if test3 is equal to test4
+    console.log(45 === "45"); // Returns true if test3 is equal to test4 and they are of the same data type
+    console.log(45 != "45"); // Returns true if test3 is not equal to test4
+    console.log(45 !== "45"); // Returns true if test3 is not equal to test4 and they are of the same data type
+    console.log(45 > 45); // Returns true if test3 is greater than test4
+    console.log(45 >= 45); // Returns true if test3 is greater than or equal to test4
+    console.log(45 < 45); // Returns true if test3 is less than test4
+    console.log(45 <= 45); // Returns true if test3 is less than or equal to test4
+
+    //logical operators
+    console.log( 45 === "45" && 45 == "45");
+    console.log( 45 === "45" || 45 == "45"); // returns true if one of the conditions is true
+    console.log(!(45 === "45"))
+
+    //Ternary operatora
+    let test5 = 45;
+    let test6 = 55;
+
+    test5 === test6 ? console.log("They're equal") : console.log("They're not equal")
+
+    //DOM manipulation
+    let head1 = document.querySelector(".head1");
+    head1.innerText = "welcome to javascript";
+
+    let parentElement = document.body;
+    let newDiv = document.createElement("div");
+    newDiv.class = "div1"
+    newDiv.innerText = "This is a new div"
+    newDiv.style.backgroundColor = "brown"; 
+    newDiv.style.color = "white";
+    newDiv.style.width = "300px";
+    newDiv.style.height = "300px";
+    newDiv.style.borderRadius = "10px"
+    parentElement.appendChild(newDiv);
+</script>
+</html>

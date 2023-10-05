@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     main{
+        height: 530px;
+        width: 400px;
+        background-color: red;
+        border-radius: 10px;
+        margin: auto;
+    }
+    main h2{
+        padding: 5px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .box{
+        height: 100px;
+        width: 395px;
+        background-color: blanchedalmond;
+        position: absolute;
+        top: 60px;
+        border: none;
+        /* border-radius: 10px; */
+    }
+.info{
+    height: 350px;
+    width: 400px;
+    background-color: aqua;
+    position: absolute;
+    top: 180px;
+}
+.info input{
+    height: 50px;
+    width: 80px;
+    background-color: black;
+    color: white;
+    margin: 8px;
+    cursor: pointer;
+}
+</style>
+<body>
+    <main>
+        <h2>Calculator</h2>
+        <div>
+            <input type="text" name="display">
+        </div>
+        <div class="info">
+            <input type="button" value="AC" onclick="display.value += '' ">
+            <input type="button" value="CE">
+            <input type="button" value=".">
+            <input type="button" value="00">
+            <input type="button" value="7" onclick="display.value = '7' ">
+            <input type="button" value="8">
+            <input type="button" value="9">
+            <input type="button" value="/">
+            <input type="button" value="4">
+            <input type="button" value="5">
+            <input type="button" value="6">
+            <input type="button" value="*">
+            <input type="button" value="1">
+            <input type="button" value="2">
+            <input type="button" value="3">
+            <input type="button" value="-">
+            <input type="button" value="0">
+            <input type="button" value=".">
+            <input type="button" value="=">
+            <input type="button" value="+">
+
+
+            
+        </div>
+    </main>
+</body>
+</html>
