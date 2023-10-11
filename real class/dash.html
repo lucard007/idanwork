@@ -10,7 +10,7 @@
         <h1>Welcome to your Dashboard Comrade!!!!!</h1>
         <textarea name="" id="" cols="30" rows="10" placeholder="About you"></textarea>
         <button>NEXT!!!</button>
-        <a href="ak.html"><button onclick="logout()">Logout!!!!</button></a>
+        <a href=""><button onclick="logout()">Logout!!!!</button></a>
     </main>
 </body>
 
@@ -18,5 +18,19 @@
     function name(params) {
         
     }
+    const storedUsers = JSON.parse(localStorage.getItem("stredUser"));
+
+
+    // console.log(storedUsers);
+    // if (storedUsers === null) {
+    //     alert("youre not logged in")
+    //     window.location.href = "aklogin.html"
+    // }
+
+    // function logout() {
+    //     localStorage.removeItem("storedUser");
+    //     window.location.href = "aklogin.html"
+        
+    // }
 </script>
 </html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        button{
+            background-color: black;
+            color: white;
+        }
+    </style> -->
+</head>
+<body>
+    <h1 id="h1"></h1>
+    <button id="prev">Prev</button>
+    <button id="next">Next</button>
+</body>
+<script>
+    //classwork2
+    //next and prev button which changes the background color on click
+    let colors = ['green', 'red', 'pink', 'black', 'orange', 'tomato'];
+    let names = ["Daniel", "Samuel", "Victor", "David"];
+    let prev = document.getElementById("prev");
+    let h1 = document.getElementById("h1");
+    let next = document.getElementById("next");
+    let currentIndex = 0;
+    let lastIndex = names.length -1;
+    
+    function change(){
+        h1.innerText = `Welcome ${names[currentIndex]}`;
+    }
+
+    prev.addEventListener("click", () => {
+        currentIndex--;
+        if(currentIndex < 0){
+            currentIndex = lastIndex
+        }
+        change()
+    })
+
+    next.addEventListener("click", () => {
+        currentIndex++;
+        if(currentIndex >= names.length){
+            currentIndex = 0;
+        }
+        change()
+    })
+    change();
+    console.log(names[1]);
+
+
+
+
+
+
+    let btn = document.getElementById("btn")
+    function lightDark() {
+        if(btn.style.backgroundColor = "black"){
+            document.body.style.backgroundColor = "black";
+            btn.style.backgroundColor = "white"
+            btn.style.color = "black"
+            btn.innerText = "Light Mode"
+        }else{
+            document.body.style.backgroundColor = "white";
+            btn.style.backgroundColor = "black"
+            btn.style.color = "white"
+            btn.innerText = "Dark Mode"
+        }
+    }
+</script>
+</html>

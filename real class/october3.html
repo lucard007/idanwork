@@ -7,6 +7,9 @@
 </head>
 <body>
     <h1 id="h1"></h1>
+
+    <input type="file" onchange="pickfile(event)">
+    <img id="img" alt="" height="300" width="300">
 </body>
 <script>
     //Math.random, math.floor, date
@@ -36,5 +39,20 @@
     let min = date.getMinutes();
     let sec = date.getSeconds();
     h1.innerText = `Time: ${hour}: ${min}: ${sec}`;
+
+
+    function pickfile(ev) {
+        console.log(ev.target.files);
+        let file = ev.target.files[0];
+        let reader = new FileReader()
+        reader.addEventListener("load", (e) =>{
+            let result = e.target.result
+            img.src = result
+        })
+
+        if(file) {
+            reader.readAsDataURL(file)
+        }
+    }
 </script>
 </html>

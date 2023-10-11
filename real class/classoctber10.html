@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="minus()">-</button>
+        <span id="num">0</span>
+        <button onclick="plus()">+</button>
+        <button onclick="stop()">stop</button>
+        <h2></h2>
+    </div>
+</body>
+<script>
+//  alert("Hello world");
+
+// setTimeout(()=>{   
+// alert("Hello world");
+// },5000)    // to repeat an funtion for a specific time
+
+
+// setInterval(()=>{
+//     console.log("hello world");
+//     console.log("hello world");
+// },2000)     // to set interval funtion
+
+
+// function minus() {
+//     setTimer(()=>{
+//         span.innerHtml = `$(span - 1)`
+//         // alert("span")
+//     },2000)
+// }
+
+// function plus() {
+//     setTimer(()=>{
+//         span.innerHtml = `$(span + 1)`
+//     },2000)
+// }
+
+
+// if (span - 0) {
+//     setInterval(()=>{
+//         span.innerText = `$(span - 1)`
+//     },2000) 
+// }
+
+let fig = 0;
+let lol = ""
+num.innerHTML = fig;
+
+function minus() {
+    if (fig == -10) {
+        clearInterval(lol)
+        return
+    }else{
+        fig --;
+        num.innerHTML = fig;
+    }
+
+    setInterval(()=>{
+    fig --;
+    num.innerHTML = fig;
+},2000)
+}
+
+function plus() {
+    if (fig == 10) {
+        clearInterval(lol)
+        return
+    }else{
+        fig ++;
+        num.innerHTML = fig;
+    }
+
+    setInterval(()=>{
+    fig ++;
+    num.innerHTML = fig;
+},2000)
+}
+
+// how to stop interval
+
+// let clearPlus = setInterval(()=>{
+//     num++;
+//     num.innerHTML = num;
+// },1000)
+
+// function stop() {
+//     clearInterval(clearPlus)
+// }
+
+// function stop() {
+//     clearInterval(fig)
+//     clearInterval(fig);
+// }
+
+// setInterval(()=>{
+//     fig --;
+//     num.innerHTML = fig;
+// },2000)
+
+// setInterval(()=>{
+//     fig ++;
+//     num.innerHTML = fig;
+// },2000)
+
+</script>
+</html>

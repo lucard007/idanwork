@@ -79,7 +79,7 @@
         let storedArray = localStorage.getItem("infoArr");
         let parsedArr = JSON.parse(storedArray);
         let infoArr2 = [...parsedArr, infoObj];
-        localStorage.setItem("infoArr", JSON.stringify(infoArr2));
+        // localStorage.setItem("infoArr", JSON.stringify(infoArr2));
 
         if (firstname == "" || surname == "" || phonenumber == "" || email == "" || password == "" || confirmpass == "" ) {
             alert("input field cannot be empty")
@@ -90,6 +90,7 @@
             window.location.href = "signup.html";
         }else{
             alert("login succesfull")
+            localStorage.setItem("infoArr", JSON.stringify(infoArr2));
             window.location.href = "aklogin.html";
 
         }
