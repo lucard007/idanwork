@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Apk</title>
+    <style>
+        body{
+            background-color: rgb(242, 242, 242);
+            font-family: sans-serif;
+        }
+        section{ 
+            height: 500px;
+            width: 100%;
+            padding: 10px 0px;
+            margin: auto;
+            background-color: wheat;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        h1, p, #clock{
+            text-align: center;
+        }
+        main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+        .div1{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        button{
+            color: black;
+            background-color: whitesmoke(42, 42, 42);
+            border: 2px solid greenyellow;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px 0px;
+        }
+        #clock{
+            margin-top: 150px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body> 
+    <section>
+        <p>Time</p>
+        <h1 id="h1"></h1>
+        <br> <br> <br> <br>
+        <div>
+            <main>
+                <label for="alarmTime">Alarm setter</label>
+                <input type="time" id="alarmTime">
+            </main>
+            <div class="div1">
+                <button onclick="setAlarm()">Set Alarm</button>
+                <br> <br>
+                <button onclick="stopAlarm()">Stop Alarm</button>
+            </div>
+        </div>
+        <h2 id="clock"></h2>
+    </section>
+</body>
+<script>
+    let alarmInterval;
+    const clock = document.getElementById("clock");
+    clock.innerHTML = "00:00:00";
+
+    function setAlarm(){
+        const alarmTime = document.getElementById("alarmTime").value;
+        if (alarmTime) {
+            const now = new Date();
+            const alarm = new Date(now.toDateString() + ' ' + alarmTime);
+
+            const currentTime = new Date();
+            const timeUntilAlarm = alarm - currentTime;
+
+            if (timeUntilAlarm <= 0) {
+                alert("Please enter a time that is in the future");
+                return
+            }
+
+            alarmInterval = setInterval(function () {
+                const currentTime = new Date();
+                const timeUntilAlarm = alarm - currentTime;
+
+                if(timeUntilAlarm <= 0){
+                    alert("Time's up")
+                    clearInterval(alarmInterval);
+                } else {
+                    displayTime(timeUntilAlarm);
+                }
+            }, 1000)
+        }
+    }
+
+    function displayTime(time) {
+            const hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((time % (1000 * 60)) / 1000);
+
+            const timeString = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+            clock.innerHTML = timeString;
+    }
+
+    function stopAlarm() {
+            clearInterval(alarmInterval);
+            document.getElementById("clock").textContent = '00:00:00';
+    }
+
+    setInterval(()=>{
+        let h1 = document.getElementById("h1");
+        let date = new Date();
+        let hour = date.getHours();
+        let min = date.getMinutes();
+        let sec = date.getSeconds();
+        h1.innerHTML = `${hour}:${min}:${sec} ${hour >= 12 ? `PM` : `AM`}`
+    }, 1000)
+</script>
+</html>

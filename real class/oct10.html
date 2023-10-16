@@ -148,6 +148,8 @@
             options[i].value = currentQuestionData.options[i];
             options[i].nextSibling.textContent = currentQuestionData.options[i];
             options[i].checked = false;
+            clearInterval(si);
+            
           }
         }
 
@@ -197,6 +199,18 @@
       });
 
       // settimer:
+      let si = setInterval(()=>{
+        if (time == 0) {
+            alert("Time's up!!!");
+            clearInterval(si);
+            h1.innerHTML = `Time left: 0 sec`;
+            alert(`You scored ${score} out of ${questions.length}`);
+            return
+        } else {
+            h1.innerHTML = `Time left: ${time} sec`;
+            time--;
+        }
+    }, 1000)
 
 
 
